@@ -268,3 +268,76 @@ a {
 }
 
 /*************************************  Prizes End ********************************************/
+/*+++++++++++++++++++++++++++++                         ++++++++++++++++++++++++++++++++++++*/
+/*********************************** FAQ section start *************************************/
+.faq-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.faq-section .faq-head {
+	display: flex;
+	align-items: center;
+}
+
+.faq-section .faq-head .faq-title {
+    margin: 1.5rem;
+    padding: 0.5rem;
+	font-size: 1.8rem;
+}
+
+.faq-section .faq-items-grid {
+    margin: 0 1.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1.2rem;
+	column-gap: 1.2rem;
+	grid-row-gap: 1.2rem;
+	row-gap: 1.2rem;
+}
+
+.faq-section .faq-items-grid .faq-item {
+	flex: 1;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	background-color: #252638;
+}
+
+.faq-section .faq-items-grid .faq-item .faq-text {
+	padding: 0.7rem;
+/*
+    margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	border: 1px solid white;
+*/
+    border-radius: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-start;
+	cursor: pointer;
+	user-select: none;
+}
+
+.faq-section .faq-items-grid .faq-item .faq-text .faq-title {
+	font-size: 1.2rem;
+}
+
+.faq-section .faq-items-grid .faq-item.hidden img {
+	transform: rotate(180deg);
+}
+
+.faq-section .faq-items-grid .faq-item .faq-answer {
+	margin: 0 0.4rem 0.4rem;
+	height: 100%;
+	background-color: #151629;
+	max-height: 200px;
+    border-radius: 0 0 0.5rem 0.5rem;
+	overflow: hidden;
+	transition: all .3s ease-out;
+}
+.faq-section .faq-items-grid .faq-item .faq-answer p {
+	padding: 1rem 1.5rem;
+}
+/*********************************** FAQ section end ***************************************/
