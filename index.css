@@ -16,6 +16,7 @@
 	--color-background-light: #eef1f6;
 	--font-color: #fff;
 	--color-button-text: #fff;
+	--hover-background-color: #A0A0A0;
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
 	--border-color-light: #eee;
@@ -72,7 +73,9 @@ a {
 	align-items: center;
 	height: 10vh;
 	margin: 0rem 5rem 0 10rem;
+	text-transform: uppercase;
 }
+
 
 .nav-links {
 	display: flex;
@@ -86,13 +89,16 @@ a {
 }
 
 .nav-links > li > a {
-	padding: 0.2rem 1.2rem;
+	padding: 0.438rem 0.813rem;
+	border-radius: 0.188rem;
 	opacity: 0.7;
 	transition: all 0.2s ease-in-out;
 }
 
 .nav-links > li > a:hover {
 	opacity: 1;
+	background: var(--hover-background-color);
+	transition: 0.5s;
 }
 
 /*************************************  Nav bar end ********************************************/
