@@ -4,7 +4,7 @@
 
 :root {
   --title-font: "Sen", sans-serif;
-
+  --roboto: "Roboto Mono", monospace;
   --color-main: #0c0d21;
   --color-main-light: #151629;
   --color-main-transparent: rgba(12, 23, 36, 0.27451);
@@ -45,6 +45,7 @@
   background-color: var(--color-main);
   color: var(--font-color);
   font-family: "Sen", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 html {
@@ -110,6 +111,45 @@ a {
 }
 
 /*************************************  Hero End ********************************************/
+/* ----------------------------------------------------------------------------------------------------------- */
+/*************************************  About Start ********************************************/
+
+.container {
+  display: block;
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.heading {
+  display: flex;
+  align-items: center;
+}
+.section-title::before {
+  content: "#";
+  padding-right: 5px;
+  color: var(--hash-tag);
+}
+
+.heading h2.section-title {
+  font-family: "Sen";
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 10px 10px 10px 0;
+}
+
+.heading .line {
+  flex: 1;
+  height: 1px;
+  width: 985px;
+  background: var(--colour-pink);
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 10px;
+}
+/*************************************  About End ********************************************/
 /* ----------------------------------------------------------------------------------------------------------- */
 /*************************************  Prizes Start ********************************************/
 .prizes {
