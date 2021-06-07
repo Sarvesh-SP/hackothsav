@@ -152,7 +152,8 @@ a {
 
 #text-container {
   width: 40rem;
-  height: 10rem;
+  height: 12rem;
+  line-height: 1.5rem;
   padding-left: 2.5rem;
   text-align: justify;
   font-size: large;
