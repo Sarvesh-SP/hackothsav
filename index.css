@@ -3,38 +3,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --title-font: "Sen", sans-serif;
+	--title-font: "Sen", sans-serif;
 
-  --color-secondary: #0c0d21;
-  --color-secondary-light: #151629;
-  --color-secondary-transparent: rgba(12, 23, 36, 0.27451);
-  --color-primary: #2882f5;
-  --color-primary-light: rgba(40, 129, 245, 0.18431);
-  --color-accent: #28f586;
-  --color-accent-light: rgba(40, 245, 136, 0.07451);
-  --color-accent-2: #f31154;
-  --color-accent-2-light: rgba(12, 206, 93, 0.18431);
-  --color-background: #e2e7ee;
-  --color-background-light: #eef1f6;
-  --font-color: #fff;
-  --color-button-text: #fff;
-  --font-color-light: hsla(0, 0%, 100%, 0.25882);
-  --border-color: #dbdddf;
-  --border-color-light: #eee;
-  --colour-pink: #e58ab2;
-  --color-error: #e97414;
-  --color-success: #01c251;
-  --gradient-blue: linear-gradient(
-    94.99deg,
-    #00ffa4 2.48%,
-    #6e12ca 52.18%,
-    #2882f5 95.72%
-  );
-  --default-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --primary-shadow: 0px 10px 20px rgba(16, 68, 209, 0.185);
-  --popup-shadow: 0px 20px 35px rgba(7, 74, 126, 0.123);
-  --popup-background: rgba(20, 23, 54, 0.17255);
+	--color-secondary: #0c0d21;
+	--color-secondary-light: #151629;
+	--color-secondary-transparent: rgba(12, 23, 36, 0.27451);
+	--color-primary: #2882f5;
+	--color-primary-light: rgba(40, 129, 245, 0.18431);
+	--color-accent: #28f586;
+	--color-accent-light: rgba(40, 245, 136, 0.07451);
+	--color-accent-2: #f31154;
+	--color-accent-2-light: rgba(12, 206, 93, 0.18431);
+	--color-background: #e2e7ee;
+	--color-background-light: #eef1f6;
+	--font-color: #fff;
+	--color-button-text: #fff;
+	--hover-background-color: #A0A0A0;
+	--font-color-light: hsla(0, 0%, 100%, 0.25882);
+	--border-color: #dbdddf;
+	--border-color-light: #eee;
+	--colour-pink: #e58ab2;
+	--color-error: #e97414;
+	--color-success: #01c251;
+	--gradient-blue: linear-gradient(
+		94.99deg,
+		#00ffa4 2.48%,
+		#6e12ca 52.18%,
+		#2882f5 95.72%
+	);
+	--default-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+		0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--primary-shadow: 0px 10px 20px rgba(16, 68, 209, 0.185);
+	--popup-shadow: 0px 20px 35px rgba(7, 74, 126, 0.123);
+	--popup-background: rgba(20, 23, 54, 0.17255);
 }
 /*********************** global variable declaration End ********************************************/
 
@@ -69,12 +70,14 @@ a {
 /*************************************  Nav bar Start ********************************************/
 
 .nav-bar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  margin: 0rem 5rem 0 10rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+	margin: 0rem 5rem 0 10rem;
+	text-transform: uppercase;
 }
+
 
 .nav-links {
   display: flex;
@@ -88,13 +91,16 @@ a {
 }
 
 .nav-links > li > a {
-  padding: 0.2rem 1.2rem;
-  opacity: 0.7;
-  transition: all 0.2s ease-in-out;
+	padding: 0.438rem 0.813rem;
+	border-radius: 0.188rem;
+	opacity: 0.7;
+	transition: all 0.2s ease-in-out;
 }
 
 .nav-links > li > a:hover {
-  opacity: 1;
+	opacity: 1;
+	background: var(--hover-background-color);
+	transition: 0.5s;
 }
 
 /*************************************  Nav bar end ********************************************/
