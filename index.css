@@ -45,13 +45,22 @@
 	font-family: "Sen", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 a {
 	text-decoration: none;
 	color: var(--font-color);
+	cursor: pointer;
 }
 
 .typer {
 	color: var(--font-color);
+}
+
+#asd {
+	height: 20vh;
 }
 
 /*************************************  Nav bar Start ********************************************/
