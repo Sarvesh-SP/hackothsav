@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
 
 :root {
-
   --title-font: "Sen", sans-serif;
 
   --color-main: #0c0d21;
@@ -36,67 +35,66 @@
   --primary-shadow: 0px 10px 20px rgba(16, 68, 209, 0.185);
   --popup-shadow: 0px 20px 35px rgba(7, 74, 126, 0.123);
   --popup-background: rgba(20, 23, 54, 0.17255);
-
 }
 /*********************** global variable declaration End ********************************************/
 
 * {
-	padding: 0;
-	box-sizing: border-box;
-	margin: 0;
-	background-color: var(--color-secondary);
-	color: var(--font-color);
-	font-family: "Sen", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: var(--color-main);
+  color: var(--font-color);
+  font-family: "Sen", sans-serif;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-	text-decoration: none;
-	color: var(--font-color);
-	cursor: pointer;
+  text-decoration: none;
+  color: var(--font-color);
+  cursor: pointer;
 }
 
 .typer {
-	color: var(--font-color);
+  color: var(--font-color);
 }
 
 /* !-----------------dummy div--------------------- */
 #asd {
-	height: 20vh;
+  height: 20vh;
 }
 
 /*************************************  Nav bar Start ********************************************/
 
 .nav-bar {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 10vh;
-	margin: 0rem 5rem 0 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  margin: 0rem 5rem 0 10rem;
 }
 
 .nav-links {
-	display: flex;
-	align-items: center;
-	width: max-content;
+  display: flex;
+  align-items: center;
+  width: max-content;
 }
 
 .nav-links > li {
-	list-style: none;
-	padding: 1rem;
+  list-style: none;
+  padding: 1rem;
 }
 
 .nav-links > li > a {
-	padding: 0.2rem 1.2rem;
-	opacity: 0.7;
-	transition: all 0.2s ease-in-out;
+  padding: 0.2rem 1.2rem;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-links > li > a:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 /*************************************  Nav bar end ********************************************/
@@ -104,69 +102,69 @@ a {
 /*************************************  Hero Start ********************************************/
 
 .hero {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	height: 600px;
+  height: 600px;
 }
 
 /*************************************  Hero End ********************************************/
 /* ----------------------------------------------------------------------------------------------------------- */
 /*************************************  Prizes Start ********************************************/
 .prizes {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
 }
 
 .flip-card {
-	width: 392px;
-	height: 300px;
-	margin: 0 1rem;
-	perspective: 1000px;
-	cursor: pointer;
+  width: 392px;
+  height: 300px;
+  margin: 0 1rem;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
 .flip-card-inner {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	transition: transform 0.8s;
-	transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-card-front,
 .flip-card-back {
-	border-radius: 14px;
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+  border-radius: 14px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .flip-card-front,
 .flip-card-back h1,
 .flip-card-front img,
 .flip-card-front p {
-	background-color: var(--color-secondary-light);
+  background-color: var(--color-main-light);
 }
 
 .flip-card-back {
-	background-color: var(--color-secondary-light);
-	color: white;
-	transform: rotateY(180deg);
+  background-color: var(--color-main-light);
+  color: white;
+  transform: rotateY(180deg);
 }
 
 /*************************************  Prizes End ********************************************/
