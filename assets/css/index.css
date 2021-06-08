@@ -275,16 +275,6 @@ a {
 	flex-direction: column;
 }
 
-.faq-section .faq-head {
-	display: flex;
-	align-items: center;
-}
-
-.faq-section .faq-head .faq-title {
-    margin: 1.5rem;
-	font-size: 1.8rem;
-}
-
 .faq-section .faq-items-grid {
     margin: 0 1.5rem;
 	display: grid;
