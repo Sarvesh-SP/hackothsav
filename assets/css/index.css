@@ -282,7 +282,6 @@ a {
 
 .faq-section .faq-head .faq-title {
     margin: 1.5rem;
-    padding: 0.5rem;
 	font-size: 1.8rem;
 }
 
@@ -302,42 +301,38 @@ a {
 	display: flex;
 	flex-direction: column;
 	border-radius: 0.5rem;
-	background-color: #252638;
+	background-color: var(--color-main-light);
 }
 
-.faq-section .faq-items-grid .faq-item .faq-text {
+.faq-text .faq-text-title{
+	background-color: var(--color-main-light);
+}
+
+.faq-section .faq-items-grid .faq-item .faq-text-title {
 	padding: 0.7rem;
-/*
-    margin-left: 0.2rem;
-	margin-right: 0.2rem;
-	border: 1px solid white;
-*/
-    border-radius: 0.5rem;
+
+    border-radius: 0.5rem 0.5rem 0 0;
 	display: flex;
 	justify-content: space-between;
 	align-content: flex-start;
-	cursor: pointer;
-	user-select: none;
 }
 
-.faq-section .faq-items-grid .faq-item .faq-text .faq-title {
+.faq-section .faq-items-grid .faq-item .faq-text .faq-text-title {
 	font-size: 1.2rem;
 }
 
-.faq-section .faq-items-grid .faq-item.hidden img {
-	transform: rotate(180deg);
+.faq-section .faq-items-grid .faq-item .faq-answer {
+	background-color: var(--color-main-light);
+	border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.faq-section .faq-items-grid .faq-item .faq-answer {
+.faq-section .faq-items-grid .faq-item .faq-answer p {
 	margin: 0 0.4rem 0.4rem;
+	padding: 1rem 1.5rem;
 	height: 100%;
-	background-color: #151629;
 	max-height: 200px;
+	background-color: var(--color-main);
     border-radius: 0 0 0.5rem 0.5rem;
 	overflow: hidden;
-	transition: all .3s ease-out;
-}
-.faq-section .faq-items-grid .faq-item .faq-answer p {
-	padding: 1rem 1.5rem;
 }
 /*********************************** FAQ section end ***************************************/
