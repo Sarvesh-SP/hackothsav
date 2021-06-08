@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="/assets/css/index.css" />
 	<script async src="/scripts/typer.js"></script>
 	<script async src="/scripts/timer.js"></script>
+	<script async src="/scripts/burger.js"></script>
 	<!-- <script async src="/scripts/scrolling.js"></script> -->
 </head>
 
@@ -19,16 +20,16 @@
 			<h1>LOGO RE BABA</h1>
 		</div>
 		<ul class="nav-links">
-			<li><a class="active" href="#prizes">Home</a></li>
-			<li><a>About</a></li>
-			<li><a>Rules and Regulations</a></li>
-			<li><a>Registration</a></li>
+			<li><a class="active link" href="#prizes">Home</a></li>
+			<li><a class="link">About</a></li>
+			<li><a class="link">Rules and Regulations</a></li>
+			<li><a class="link">Registration</a></li>
 		</ul>
-		<div class="hamburger-menu">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-		  </div>
+		<div class="hamburger">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
 	</nav>
 	<!-- Nav bar End maccha ------------------------------------------------------------------------>
 
@@ -64,7 +65,7 @@
 		</section>
 	</div>
 	<!-- About End ----------------------------------------------------------------------------------------->
-	
+
 	<br>
 	<br>
 	<br>
@@ -72,19 +73,19 @@
 	<div class="timer-container">
 		<h1 id="headline">Countdown to The Big day</h1>
 		<div id="countdown">
-		  <ul>
-			<li><span id="days"></span>days</li>
-			<li><span id="hours"></span>Hours</li>
-			<li><span id="minutes"></span>Minutes</li>
-			<li><span id="seconds"></span>Seconds</li>
-		  </ul>
+			<ul>
+				<li><span id="days"></span>days</li>
+				<li><span id="hours"></span>Hours</li>
+				<li><span id="minutes"></span>Minutes</li>
+				<li><span id="seconds"></span>Seconds</li>
+			</ul>
 		</div>
 		<div id="content" class="emoji">
-		  <span>🥳</span>
-		  <span>🎉</span>
-		  <span>🎂</span>
+			<span>🥳</span>
+			<span>🎉</span>
+			<span>🎂</span>
 		</div>
-	  </div>
+	</div>
 	<!--Timer section End-------------------------------------------------------------------------------------- -->
 	<!-- prizes page------------------------------------------------------------------------------------------- -->
 	<div id="prizes" class="container">
@@ -95,106 +96,112 @@
 				</h2>
 				<div class="line"></div>
 			</div>
-			<section class="prizes" >
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="./assets/images/first_prize.svg" alt="Avatar" />
-						<p>1st Prize Winner</p>
-						<p>Hover to view the cash prize</p>
-					</div>
-					<div class="flip-card-back">
-						<h1>15,000 Cash</h1>
-					</div>
-				</div>
-			</div>
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="./assets/images/second_prize.svg" alt="Avatar" />
-						<p>2nd Prize Winner</p>
-						<p>Hover to view the cash prize</p>
-					</div>
-					<div class="flip-card-back">
-						<h1>15,000 Cash</h1>
+			<section class="prizes">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="./assets/images/first_prize.svg" alt="Avatar" />
+							<p>1st Prize Winner</p>
+							<p>Hover to view the cash prize</p>
+						</div>
+						<div class="flip-card-back">
+							<h1>15,000 Cash</h1>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<img src="./assets/images/third_prize.svg" alt="Avatar" />
-						<p>3rd Prize Winner</p>
-						<p>Hover to view the cash prize</p>
-					</div>
-					<div class="flip-card-back">
-						<h1>15,000 Cash</h1>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="./assets/images/second_prize.svg" alt="Avatar" />
+							<p>2nd Prize Winner</p>
+							<p>Hover to view the cash prize</p>
+						</div>
+						<div class="flip-card-back">
+							<h1>15,000 Cash</h1>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="./assets/images/third_prize.svg" alt="Avatar" />
+							<p>3rd Prize Winner</p>
+							<p>Hover to view the cash prize</p>
+						</div>
+						<div class="flip-card-back">
+							<h1>15,000 Cash</h1>
+						</div>
+					</div>
+				</div>
+			</section>
 		</section>
 		<div>
-		
-		<!--prizes page End-------------------------------------------------------------------------------------- -->
-		<!--Sponsors page start-------------------------------------------------------------------------------------- -->
-		<div id="sponsors" class="container">
-			<section class="content-section">
-				<div class="heading">
-					<h2 class="section-title">
-						Sponsors
-					</h2>
-					<div class="line"></div>
-				</div>
-				<!-- <br>
+
+			<!--prizes page End-------------------------------------------------------------------------------------- -->
+			<!--Sponsors page start-------------------------------------------------------------------------------------- -->
+			<div id="sponsors" class="container">
+				<section class="content-section">
+					<div class="heading">
+						<h2 class="section-title">
+							Sponsors
+						</h2>
+						<div class="line"></div>
+					</div>
+					<!-- <br>
 				<br>
 				<br> -->
-				<section class="sponsors">
-					<div class="flip-card">
-						<div class="flip-card-inner">
-							<div class="flip-card-front">
-								<img src="./assets/images/robosoft.svg" alt="Robosoft" width="250rem" height="250rem" />
-							</div>
-							<div class="flip-card-back">
-								<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-									make a type specimen book</h1>
-								<a href="https://www.robosoftin.com/">Read more</a>
-							</div>
-						</div>
-					</div>
-					<div class="flip-card">
-						<div class="flip-card-inner">
-							<div class="flip-card-front">
-								<img src="./assets/images/prueba.png" alt="Prueba" width="250rem" height="250rem"/>
-							</div>
-							<div class="flip-card-back">
-								<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-									make a type specimen book
-								</h1>
-								<a href="https://www.robosoftin.com/">Read more</a>
+					<section class="sponsors">
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="./assets/images/robosoft.svg" alt="Robosoft" width="250rem" height="250rem" />
+								</div>
+								<div class="flip-card-back">
+									<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+										industry's
+										standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+										scrambled it to
+										make a type specimen book</h1>
+									<a href="https://www.robosoftin.com/">Read more</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="flip-card">
-						<div class="flip-card-inner">
-							<div class="flip-card-front">
-								<img src="./assets/images/ieee.png" alt="IEEE" width="250rem" height="250rem" />
-							</div>
-							<div class="flip-card-back">
-								<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-									make a type specimen book
-								</h1>
-							<a href="https://www.robosoftin.com/">Read more</a>
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="./assets/images/prueba.png" alt="Prueba" width="250rem" height="250rem" />
+								</div>
+								<div class="flip-card-back">
+									<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+										industry's
+										standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+										scrambled it to
+										make a type specimen book
+									</h1>
+									<a href="https://www.robosoftin.com/">Read more</a>
+								</div>
 							</div>
 						</div>
-					</div>
+						<div class="flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="./assets/images/ieee.png" alt="IEEE" width="250rem" height="250rem" />
+								</div>
+								<div class="flip-card-back">
+									<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the
+										industry's
+										standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+										scrambled it to
+										make a type specimen book
+									</h1>
+									<a href="https://www.robosoftin.com/">Read more</a>
+								</div>
+							</div>
+						</div>
+					</section>
 				</section>
-			</section>
-		</div>
-<!--Sponsers page End-------------------------------------------------------------------------------------- -->
+			</div>
+			<!--Sponsers page End-------------------------------------------------------------------------------------- -->
 </body>
 
 </html>
