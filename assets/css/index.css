@@ -85,7 +85,7 @@ a {
 
 .nav-links > li {
 	list-style: none;
-	padding: 1rem;
+	/* padding: 1rem; */
 }
 
 .nav-links > li > a {
@@ -98,6 +98,17 @@ a {
 	opacity: 1;
 }
 
+@media screen and (max-width: 1000px) {
+	.nav-bar {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.nav-bar .nav-links {
+		display: none;
+	}
+}
 /*************************************  Nav bar end ********************************************/
 /* ----------------------------------------------------------------------------------------------------------- */
 /*************************************  Hero Start ********************************************/
