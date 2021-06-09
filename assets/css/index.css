@@ -5,8 +5,8 @@
 :root {
   --title-font: "Sen", sans-serif;
   --roboto: "Roboto Mono", monospace;
-  --color-main: #0a1d37;
-  --color-main-light: #293b5f;
+  --color-main: #521262;
+  --color-main-light: #6639a6;
   --color-main-transparent: rgba(12, 23, 36, 0.27451);
   --color-primary: #2882f5;
   --color-primary-light: rgba(40, 129, 245, 0.18431);
@@ -21,7 +21,7 @@
   --font-color-light: hsla(0, 0%, 100%, 0.25882);
   --border-color: #dbdddf;
   --border-color-light: #eee;
-  --colour-pink: #faf3f3;
+  --colour-pink: #6fe7dd;
   --color-error: #e97414;
   --color-success: #01c251;
   --gradient-blue: linear-gradient(
