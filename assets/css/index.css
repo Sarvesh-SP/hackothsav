@@ -149,7 +149,18 @@ a {
 
 @media screen and (max-width: 700px) {
 	.sun-moon-container {
-		margin-right: 2.2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sun {
+		margin: 0;
+	}
+
+	.dark .moon {
+		margin: 0;
 	}
 }
 /*************************************  toggleButton end ********************************************/
