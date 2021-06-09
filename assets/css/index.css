@@ -5,8 +5,8 @@
 :root {
   --title-font: "Sen", sans-serif;
   --roboto: "Roboto Mono", monospace;
-  --color-main: #521262;
-  --color-main-light: #6639a6;
+  --color-main: #0f1021;
+  --color-main-light: #1a0841;
   --color-main-transparent: rgba(12, 23, 36, 0.27451);
   --color-primary: #2882f5;
   --color-primary-light: rgba(40, 129, 245, 0.18431);
