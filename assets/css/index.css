@@ -596,6 +596,17 @@ a {
 	opacity: 0.7;
 }
 
+@media screen and (max-width: 700px) {
+	.track-items-grid {
+		display: grid;
+		grid-template-columns: none;
+		grid-row-gap: 1.2rem;
+		row-gap: 1.2rem;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 /********************************* Track end *********************************************/
 /*--------------------------------						----------------------------------*/
 /*********************************** FAQ section start *************************************/
@@ -654,4 +665,15 @@ a {
 	border-radius: 0 0 0.5rem 0.5rem;
 	overflow: hidden;
 }
+
+@media screen and (max-width: 700px) {
+	.faq-section .faq-items-grid {
+		display: grid;
+		grid-template-columns: none;
+		align-items: center;
+		grid-row-gap: 1.2rem;
+		row-gap: 1.2rem;
+	}
+}
+
 /*********************************** FAQ section end ***************************************/
