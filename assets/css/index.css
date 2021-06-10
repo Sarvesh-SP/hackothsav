@@ -482,7 +482,7 @@ a {
 	overflow: hidden;
 	cursor:pointer;
 	margin: 10px;
-	box-shadow: 0px 0px 10px -7px #555;
+	box-shadow: 2px 5px 8px 8px rgba(49, 31, 99, 0.89);
 	transition: .5s;
 }
 
