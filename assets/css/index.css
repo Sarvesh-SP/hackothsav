@@ -476,8 +476,8 @@ a {
 .our-clients ul li {
 	list-style: none;
 	display: inline-block;
-	width:180px;
-	height:100px;
+	width:280px;
+	height:200px;
 	position: relative;
 	overflow: hidden;
 	cursor:pointer;
