@@ -229,6 +229,7 @@ a {
 .hamburger {
 	display: none;
 }
+
 .bar {
 	display: block;
 	width: 25px;
@@ -590,5 +591,139 @@ a {
 	}
 }
 
-/*************************************  Prizes end ********************************************/
+/*************************************  Prizes End ********************************************/
 /* ----------------------------------------------------------------------------------------------------------- */
+/********************************** Track Start *******************************************/
+
+.track-section {
+	padding: 1rem;
+}
+
+.track-items-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 4rem;
+	grid-row-gap: 1em;
+	row-gap: 1em;
+}
+
+.track-items-grid .track-panel {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.track-panel .track-box {
+	border-radius: 20%;
+	display: inline-block;
+	padding: 1rem;
+	height: 5.5rem;
+	margin-top: 1rem;
+	width: 5.5rem;
+	box-sizing: border-box;
+	border: 3px solid var(--color-accent);
+}
+
+.track-panel .track-box img {
+	float: left;
+	width: 3rem;
+	align-content: center;
+}
+
+.track-panel .track-panel-text {
+	margin-left: 1em;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.track-panel .track-panel-text .track-panel-title {
+	font-size: 1.5rem;
+}
+
+.track-panel .track-panel-text .track-panel-description {
+	margin-top: .5em;
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 700px) {
+	.track-items-grid {
+		display: grid;
+		grid-template-columns: none;
+		grid-row-gap: 1.2rem;
+		row-gap: 1.2rem;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/********************************* Track end *********************************************/
+/*--------------------------------						----------------------------------*/
+/*********************************** FAQ section start *************************************/
+
+.faq-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.faq-section .faq-items-grid {
+	margin: 0 1.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1.2rem;
+	column-gap: 1.2rem;
+	grid-row-gap: 1.2rem;
+	row-gap: 1.2rem;
+}
+
+.faq-section .faq-items-grid .faq-item {
+	flex: 1;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	background-color: var(--color-main-light);
+}
+
+.faq-text .faq-text-title {
+	background-color: var(--color-main-light);
+}
+
+.faq-section .faq-items-grid .faq-item .faq-text-title {
+	padding: 0.7rem;
+	border-radius: 0.5rem 0.5rem 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
+.faq-section .faq-items-grid .faq-item .faq-text .faq-text-title {
+	font-size: 1.2rem;
+}
+
+.faq-section .faq-items-grid .faq-item .faq-answer {
+	background-color: var(--color-main-light);
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.faq-section .faq-items-grid .faq-item .faq-answer p {
+	margin: 0 0.4rem 0.4rem;
+	padding: 1rem 1.5rem;
+	height: 100%;
+	max-height: 200px;
+	background-color: var(--color-main);
+	border-radius: 0 0 0.5rem 0.5rem;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+	.faq-section .faq-items-grid {
+		display: grid;
+		grid-template-columns: none;
+		align-items: center;
+		grid-row-gap: 1.2rem;
+		row-gap: 1.2rem;
+	}
+}
+
+/*********************************** FAQ section end ***************************************/
