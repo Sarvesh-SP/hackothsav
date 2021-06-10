@@ -39,11 +39,23 @@
 }
 
 :root[theme="light"] {
+	/* 
+	Blue:
+	#1a5ef3
+	#3be4dd
+	#5564d6
+	#13102c
+	#1846a0
+	#163974
+	#5a7186
+	#1a5ef3
+	#131435
+	*/
 	--title-font: "Sen", sans-serif;
 	--roboto: "Roboto Mono", monospace;
 	/* --color-main: #161616; */
-	--color-main: #2b2e4a;
-	--color-main-light: #e23e57;
+	--color-main: #080a41;
+	--color-main-light: #131435;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
 	--color-primary-light: rgba(40, 129, 245, 0.18431);
@@ -58,7 +70,7 @@
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
 	--border-color-light: #eee;
-	--colour-pink: #e84545;
+	--colour-pink: #3be4dd;
 	--color-error: #e97414;
 	--color-success: #01c251;
 	--gradient-blue: linear-gradient(
@@ -519,6 +531,16 @@ a {
 .flip-card-front img,
 .flip-card-front p {
 	background-color: var(--color-main-light);
+}
+
+.prizes .flip-card-back h1,
+.prizes .flip-card-back span {
+	font-size: 2vw;
+	font-family: "Roboto", monospace;
+}
+
+.flip-card-back span {
+	color: var(--color-accent);
 }
 
 .flip-card-back {
