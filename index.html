@@ -1,147 +1,174 @@
 <!DOCTYPE html>
 <html lang="en" theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hackutsav</title>
+		<link
+			rel="shortcut icon"
+			href="/assets/images/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/assets/css/index.css" />
+		<script async src="/scripts/typer.js"></script>
+		<script async src="/scripts/timer.js"></script>
+		<script async src="/scripts/burger.js"></script>
+		<script async src="/scripts/themeToggle.js"></script>
+		<script async src="/scripts/faq.js"></script>
+		<!-- <script async src="/scripts/scrolling.js"></script> -->
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Hackutsav</title>
-	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="assets/css/index.css" />
-	<script async src="scripts/typer.js"></script>
-	<script async src="scripts/timer.js"></script>
-	<script async src="scripts/burger.js"></script>
-	<script async src="scripts/themeToggle.js"></script>
-	<script async src="scripts/faq.js"></script>
-	<!-- <script async src="/scripts/scrolling.js"></script> -->
-</head>
-
-<body>
-	<!-- Nav bar maccha --------------------------------------------------------------------------->
-	<nav class="nav-bar">
-		<div class="logo">
-			<h1>LOGO RE BABA</h1>
-		</div>
-		<ul class="nav-links">
-			<li><a class="active link" href="#prizes">Home</a></li>
-			<li><a class="link">About</a></li>
-			<li><a class="link">Rules and Regulations</a></li>
-			<li><a class="link">Registration</a></li>
-			<!-- <span id="theme-button"> theme</span> -->
-			<span id="theme-button" class="sun-moon-container">
-				<svg class="sun" style="width: 24px; height: 24px" viewBox="0 0 24 24">
-					<path fill="currentColor"
-						d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z" />
-				</svg>
-
-				<svg class="moon" style="width: 24px; height: 24px" viewBox="0 0 24 24">
-					<path fill="currentColor"
-						d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" />
-				</svg>
-			</span>
-		</ul>
-		<div class="hamburger">
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-		</div>
-	</nav>
-	<!-- Nav bar End maccha ------------------------------------------------------------------------>
-
-	<!-- Hero Banner / Landing page----------------------------------------------------------- -->
-	<section class="hero">
-		<h1>
-			Bantekal University is
-			<span class="typer" id="typerr" data-words="school,jail,mofo,69" data-delay="100" data-deleteDelay="1000"></span>
-		</h1>
-		<span class="cursor"></span>
-		<div class="banner">
-			<video src="assets/background.mp4" loop autoplay muted></video>
-		</div>
-	</section>
-	<!--Hero Banner End / Landing page End----------------------------------------------------------- -->
-	<!-- About Section -->
-	<div id="about" class="container">
-		<section class="content-section">
-			<div class="heading">
-				<h2 class="section-title">We're ready for Hack69</h2>
-				<div class="line"></div>
+	<body>
+		<!-- Nav bar maccha --------------------------------------------------------------------------->
+		<nav class="nav-bar">
+			<div class="logo">
+				<h1>LOGO RE BABA</h1>
 			</div>
-			<br />
-			<div id="text-container">
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and
-					typesetting industry.Lorem Ipsum has been the industry's
-					standard dummy text ever since the 1500s, when an
-					unknown printer took a galley of type and scrambled it
-					to make a type specimen book.It has survived not only
-					five centuries, but also the leap into electronic
-					typesetting, remaining essentially unchanged. It was
-					popularised in the 1960s with the release of Letraset
-					sheets containing Lorem Ipsum passages, and more
-					recently with desktop publishing software like Aldus
-					PageMaker including versions of Lorem Ipsum.
-				</p>
-				<div class="dummy"></div>
+			<ul class="nav-links">
+				<li><a class="active link" href="#prizes">Home</a></li>
+				<li><a class="link">About</a></li>
+				<li><a class="link">Rules and Regulations</a></li>
+				<li><a class="link">Registration</a></li>
+				<!-- <span id="theme-button"> theme</span> -->
+				<span id="theme-button" class="sun-moon-container">
+					<svg
+						class="sun"
+						style="width: 24px; height: 24px"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z"
+						/>
+					</svg>
+
+					<svg
+						class="moon"
+						style="width: 24px; height: 24px"
+						viewBox="0 0 24 24"
+					>
+						<path
+							fill="currentColor"
+							d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"
+						/>
+					</svg>
+				</span>
+			</ul>
+			<div class="hamburger">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+		</nav>
+		<!-- Nav bar End maccha ------------------------------------------------------------------------>
+
+		<!-- Hero Banner / Landing page----------------------------------------------------------- -->
+		<section class="hero">
+			<h1>
+				Bantekal University is
+				<span
+					class="typer"
+					id="typerr"
+					data-words="school,jail,mofo,69"
+					data-delay="100"
+					data-deleteDelay="1000"
+				></span>
+			</h1>
+			<span class="cursor"></span>
+			<div class="banner">
+				<video src="/assets/background.mp4" loop autoplay muted></video>
 			</div>
 		</section>
-	</div>
-	<!-- About End ----------------------------------------------------------------------------------------->
-
-	<br />
-	<br />
-	<br />
-	<!--Timer section End-------------------------------------------------------------------------------------- -->
-	<div class="timer-container">
-		<h1 id="headline">Countdown to The Big day</h1>
-		<div id="countdown">
-			<ul>
-				<li><span id="days"></span> Days</li>
-				<li><span id="hours"></span> Hours</li>
-				<li><span id="minutes"></span> Minutes</li>
-				<li><span id="seconds"></span> Seconds</li>
-			</ul>
+		<!--Hero Banner End / Landing page End----------------------------------------------------------- -->
+		<!-- About Section -->
+		<div id="about" class="container">
+			<section class="content-section">
+				<div class="heading">
+					<h2 class="section-title">We're ready for Hack69</h2>
+					<div class="line"></div>
+				</div>
+				<br />
+				<div id="text-container">
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and
+						typesetting industry.Lorem Ipsum has been the industry's
+						standard dummy text ever since the 1500s, when an
+						unknown printer took a galley of type and scrambled it
+						to make a type specimen book.It has survived not only
+						five centuries, but also the leap into electronic
+						typesetting, remaining essentially unchanged. It was
+						popularised in the 1960s with the release of Letraset
+						sheets containing Lorem Ipsum passages, and more
+						recently with desktop publishing software like Aldus
+						PageMaker including versions of Lorem Ipsum.
+					</p>
+					<div class="dummy"></div>
+				</div>
+			</section>
 		</div>
-		<!-- <div id="content" class="emoji">
+		<!-- About End ----------------------------------------------------------------------------------------->
+
+		<br />
+		<br />
+		<br />
+		<!--Timer section End-------------------------------------------------------------------------------------- -->
+		<div class="timer-container">
+			<h1 id="headline">Countdown to The Big day</h1>
+			<div id="countdown">
+				<ul>
+					<li><span id="days"></span> Days</li>
+					<li><span id="hours"></span> Hours</li>
+					<li><span id="minutes"></span> Minutes</li>
+					<li><span id="seconds"></span> Seconds</li>
+				</ul>
+			</div>
+			<!-- <div id="content" class="emoji">
 			<span>🥳</span>
 			<span>🎉</span>
 			<span>🎂</span>
 		</div> -->
-	</div>
-	<!--Timer section End-------------------------------------------------------------------------------------- -->
-	<!-- prizes page------------------------------------------------------------------------------------------- -->
-	<div id="prizes" class="container">
-		<section class="content-section">
-			<div class="heading">
-				<h2 class="section-title">Prizes</h2>
-				<div class="line"></div>
-			</div>
-			<section class="prizes">
-				<div class="flip-card">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<img src="./assets/images/first_prize.svg" alt="Avatar" />
-							<p>1st Prize Winner</p>
-							<p>Hover to view the cash prize</p>
-						</div>
-						<div class="flip-card-back">
-							<h1><span>&#8377;</span>15,000 Cash</h1>
+		</div>
+		<!--Timer section End-------------------------------------------------------------------------------------- -->
+		<!-- prizes page------------------------------------------------------------------------------------------- -->
+		<div id="prizes" class="container">
+			<section class="content-section">
+				<div class="heading">
+					<h2 class="section-title">Prizes</h2>
+					<div class="line"></div>
+				</div>
+				<section class="prizes">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img
+									src="./assets/images/first_prize.svg"
+									alt="Avatar"
+								/>
+								<p>1st Prize Winner</p>
+								<p>Hover to view the cash prize</p>
+							</div>
+							<div class="flip-card-back">
+								<h1><span>&#8377;</span>15,000 Cash</h1>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="flip-card">
-					<div class="flip-card-inner">
-						<div class="flip-card-front">
-							<img src="./assets/images/second_prize.svg" alt="Avatar" />
-							<p>2nd Prize Winner</p>
-							<p>Hover to view the cash prize</p>
-						</div>
-						<div class="flip-card-back">
-							<h1><span>&#8377;</span>15,000 Cash</h1>
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<img
+									src="./assets/images/second_prize.svg"
+									alt="Avatar"
+								/>
+								<p>2nd Prize Winner</p>
+								<p>Hover to view the cash prize</p>
+							</div>
+							<div class="flip-card-back">
+								<h1><span>&#8377;</span>15,000 Cash</h1>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- <div class="flip-card">
+					<!-- <div class="flip-card">
 						<div class="flip-card-inner">
 									<div class="flip-card-front">
 										<img
@@ -156,167 +183,192 @@
 										</div>
 						</div>
 					</div> -->
+				</section>
 			</section>
-		</section>
-	</div>
+		</div>
 
-	<!--prizes page End-------------------------------------------------------------------------------------- -->
-	<!--Sponsors page start-------------------------------------------------------------------------------------- -->
-	<div id="sponsors" class="container">
-		<section class="content-section">
-			<div class="heading">
-				<h2 class="section-title">Sponsors</h2>
-				<div class="line"></div>
-			</div>
-			<div class="master-container">
-				<div class="inner-container">
-					<div class="our-clients">
-						<ul>
-							<li>
-								<img src="assets/images/robosoft.svg" alt="Robosoft-logo" />
-								<a href="https://www.robosoftin.com/" target="_blank" rel="noopener noreferrer"><img
-										src="assets/images/robosoft.svg" alt="Robosoft-logo" /></a>
-							</li>
-							<li>
-								<img src="assets/images/prueba.svg" alt="Prueba-logo" />
-								<a href="https://www.prueba.io/" target="_blank" rel="noopener noreferrer"><img
-										src="assets/images/prueba.svg" alt="Prueba-logo" /></a>
-							</li>
-							<li>
-								<img src="assets/images/ieee.png" alt="IEEE-logo" />
-								<a href="https://www.sode-edu.in" target="_blank" rel="noopener noreferrer"><img
-										src="assets/images/ieee.png" alt="IEEE-logo" /></a>
-							</li>
-						</ul>
-					</div>
+		<!--prizes page End-------------------------------------------------------------------------------------- -->
+		<!--Sponsors page start-------------------------------------------------------------------------------------- -->
+		<div id="sponsors" class="container">
+			<section class="content-section">
+				<div class="heading">
+					<h2 class="section-title">Sponsors</h2>
+					<div class="line"></div>
 				</div>
-			</div>
-		</section>
-	</div>
-	<!--Sponsers page End-------------------------------------------------------------------------------------- -->
-
-	<!---- Track page start --------------------------------------------------------------------->
-	<div id="track" class="container">
-		<section class="content-section">
-			<div class="heading">
-				<h2 class="section-title">Tracks</h2>
-				<div class="line"></div>
-			</div>
-			<section class="track-section">
-				<div class="track-items-grid">
-					<div class="track-panel">
-						<div class="track-box">
-							<img src="assets/images/robosoft.svg" alt="track icon" />
-						</div>
-						<div class="track-panel-text">
-							<h2 class="track-panel-title">Healthcare</h2>
-							<p class="track-panel-description">
-								The health care track is the perfect chance
-								to appreciate and support those who have
-								kept their own well-being as secondary, and
-								prioritised working day-and-night especially
-								for us
-							</p>
-						</div>
-					</div>
-					<div class="track-panel">
-						<div class="track-box">
-							<img src="assets/images/robosoft.svg" alt="track icon" />
-						</div>
-						<div class="track-panel-text">
-							<h2 class="track-panel-title">Education</h2>
-							<p class="track-panel-description">
-								This track is about how knowledge about
-								technology can change various dimensions of
-								life and provide each individual an
-								opportunity to grow and let others grow with
-								them .
-							</p>
-						</div>
-					</div>
-					<div class="track-panel">
-						<div class="track-box">
-							<img src="assets/images/robosoft.svg" alt="track icon" />
-						</div>
-						<div class="track-panel-text">
-							<h2 class="track-panel-title">
-								Artificial Intelligence
-							</h2>
-							<p class="track-panel-description">
-								Artificial intelligence (AI) is the
-								simulation of human intelligence processes
-								by machines, especially computer systems.
-								And this track will help you to learn and
-								build things using AI.
-							</p>
-						</div>
-					</div>
-					<div class="track-panel">
-						<div class="track-box">
-							<img src="assets/images/robosoft.svg" alt="track icon" />
-						</div>
-						<div class="track-panel-text">
-							<h2 class="track-panel-title">
-								Open Innovation
-							</h2>
-							<p class="track-panel-description">
-								Participants are welcomed to come up with
-								new and practical, feasible and original
-								ideas for any real-world problem of their
-								choice, and make the world better place.
-							</p>
+				<div class="master-container">
+					<div class="inner-container">
+						<div class="our-clients">
+							<ul>
+								<li>
+									<img
+										src="assets/images/robosoft.svg"
+										alt="Robosoft-logo"
+									/>
+									<a
+										href="https://www.robosoftin.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										><img
+											src="assets/images/robosoft.svg"
+											alt="Robosoft-logo"
+									/></a>
+								</li>
+								<li>
+									<img
+										src="assets/images/prueba.svg"
+										alt="Prueba-logo"
+									/>
+									<a
+										href="https://www.prueba.io/"
+										target="_blank"
+										rel="noopener noreferrer"
+										><img
+											src="assets/images/prueba.svg"
+											alt="Prueba-logo"
+									/></a>
+								</li>
+								<li>
+									<img
+										src="assets/images/ieee.png"
+										alt="IEEE-logo"
+									/>
+									<a
+										href="https://www.sode-edu.in"
+										target="_blank"
+										rel="noopener noreferrer"
+										><img
+											src="assets/images/ieee.png"
+											alt="IEEE-logo"
+									/></a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
-		</section>
-	</div>
-	<!------------Track page end ---------------------------------------------------------------------------->
+		</div>
+		<!--Sponsers page End-------------------------------------------------------------------------------------- -->
 
-	<!------------FAQ section start ------------------------------------------------------------------------>
-	<div id="faq" class="container">
-		<section class="content-section">
-			<div class="heading">
-				<h2 class="section-title">FAQ</h2>
-				<div class="line"></div>
-			</div>
-			<section class="faq-section">
-				<div class="faq-items-grid">
-					<div class="faq-item">
-						<div class="faq-text">
-							<h2 class="faq-text-title">
-								What is hackathon?
-							</h2>
-							<div class="angle-down">
-								<img src="/assets/images/angle_down_icon.svg" />
+		<!---- Track page start --------------------------------------------------------------------->
+		<div id="track" class="container">
+			<section class="content-section">
+				<div class="heading">
+					<h2 class="section-title">Tracks</h2>
+					<div class="line"></div>
+				</div>
+				<section class="track-section">
+					<div class="track-items-grid">
+						<div class="track-panel">
+							<div class="track-box">
+								<img
+									src="assets/images/robosoft.svg"
+									alt="track icon"
+								/>
+							</div>
+							<div class="track-panel-text">
+								<h2 class="track-panel-title">Healthcare</h2>
+								<p class="track-panel-description">
+									The health care track is the perfect chance
+									to appreciate and support those who have
+									kept their own well-being as secondary, and
+									prioritised working day-and-night especially
+									for us
+								</p>
 							</div>
 						</div>
-						<div class="faq-answer">
-							<p>
-								A hackathon is an invention marathon where
-								you can work with people around the globe to
-								build a project related to technology! It
-								isn't about hacking into a system, it's
-								instead about hacking something together and
-								learning a great deal in the process.
-							</p>
+						<div class="track-panel">
+							<div class="track-box">
+								<img
+									src="assets/images/robosoft.svg"
+									alt="track icon"
+								/>
+							</div>
+							<div class="track-panel-text">
+								<h2 class="track-panel-title">Education</h2>
+								<p class="track-panel-description">
+									This track is about how knowledge about
+									technology can change various dimensions of
+									life and provide each individual an
+									opportunity to grow and let others grow with
+									them .
+								</p>
+							</div>
+						</div>
+						<div class="track-panel">
+							<div class="track-box">
+								<img
+									src="assets/images/robosoft.svg"
+									alt="track icon"
+								/>
+							</div>
+							<div class="track-panel-text">
+								<h2 class="track-panel-title">
+									Artificial Intelligence
+								</h2>
+								<p class="track-panel-description">
+									Artificial intelligence (AI) is the
+									simulation of human intelligence processes
+									by machines, especially computer systems.
+									And this track will help you to learn and
+									build things using AI.
+								</p>
+							</div>
+						</div>
+						<div class="track-panel">
+							<div class="track-box">
+								<img
+									src="assets/images/robosoft.svg"
+									alt="track icon"
+								/>
+							</div>
+							<div class="track-panel-text">
+								<h2 class="track-panel-title">
+									Open Innovation
+								</h2>
+								<p class="track-panel-description">
+									Participants are welcomed to come up with
+									new and practical, feasible and original
+									ideas for any real-world problem of their
+									choice, and make the world better place.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="faq-item">
-						<div class="faq-text">
-							<h2 class="faq-text-title">
-								What is hackathon?
-							</h2>
-						</div>
-						<div class="faq-answer">
-							<p>This is not hackathon.</p>
-						</div>
-					</div>
-					<div class="faq-item">
-						<div class="faq-text">
-							<h2 class="faq-text-title">
-								What is an online hackathon?
-							</h2>
+				</section>
+			</section>
+		</div>
+		<!------------Track page end ---------------------------------------------------------------------------->
+
+		<!------------FAQ section start ------------------------------------------------------------------------>
+		<div id="faq" class="container">
+			<section class="content-section">
+				<div class="heading">
+					<h2 class="section-title">FAQ</h2>
+					<div class="line"></div>
+				</div>
+				<section class="faq-section">
+					<div class="faq-items-grid">
+						<div class="faq-item">
+							<div class="faq-text">
+								<h2 class="faq-text-title">
+									What is hackathon?
+								</h2>
+								<div class="angle-down">
+									<img
+										src="/assets/images/angle_down_icon.svg"
+									/>
+								</div>
+							</div>
+							<div class="faq-answer">
+								<p>
+									A hackathon is an invention marathon where
+									you can work with people around the globe to
+									build a project related to technology! It
+									isn't about hacking into a system, it's
+									instead about hacking something together and
+									learning a great deal in the process.
+								</p>
+							</div>
 						</div>
 						<div class="faq-item">
 							<div class="faq-text">
@@ -437,31 +489,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="faq-item">
-						<div class="faq-text">
-							<h2 class="faq-text-title">
-								How big can a team be?
-							</h2>
-						</div>
-						<div class="faq-answer">
-							<p>
-								You can form teams of 2 to 4 people. Most
-								teams aim to have a mix of people with both
-								design and developer skills. Remember we
-								won't accept project submissions from
-								individual applicants.
-							</p>
-						</div>
-					</div>
-				</div>
+				</section>
 			</section>
-		</section>
-	</div>
-	<!----------FAQ section end---------------------------------------------------------------------------------------->
+		</div>
+		<!----------FAQ section end---------------------------------------------------------------------------------------->
 
-	<!--Footer page start-------------------------------------------------------------------------------------- -->
+		<!--Footer page start-------------------------------------------------------------------------------------- -->
 
-	<!--Footer page End-------------------------------------------------------------------------------------- -->
-</body>
-
+		<!--Footer page End-------------------------------------------------------------------------------------- -->
+	</body>
 </html>
