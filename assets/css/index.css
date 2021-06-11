@@ -289,6 +289,8 @@ a {
 		transition: 0.3s;
 		overflow: hidden;
 		background-color: var(--color-main);
+		margin: 0;
+		padding: 0;
 	}
 
 	.nav-links > li > a::after {
