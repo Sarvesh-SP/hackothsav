@@ -14,7 +14,7 @@ var Typer = function (element) {
 	this.progress = { word: 0, char: 0, building: true, looped: 0 };
 	this.typing = true;
 
-	var colors = element.dataset.colors || "white";
+	var colors = element.dataset.colors || "#28f586";
 	this.colors = colors.split(",");
 	this.element.style.color = this.colors[0];
 	this.colorIndex = 0;
@@ -91,6 +91,7 @@ var Cursor = function (element) {
 	this.cursorDisplay =
 		element.dataset.cursordisplay || element.dataset.cursorDisplay || "_";
 	element.innerHTML = this.cursorDisplay;
+	element.style.fontSize = "2.5rem";
 	this.on = true;
 	element.style.transition = "all 0.1s";
 	this.interval = setInterval(() => this.updateBlinkState(), 400);
