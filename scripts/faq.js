@@ -1,4 +1,4 @@
-let faqQuestion = document.querySelectorAll(".faq-text");
+let faqQuestion = document.querySelectorAll(".angle-down");
 let faqAnswer = document.querySelectorAll(".faq-answer");
 
 const displayFAQ = i => {
