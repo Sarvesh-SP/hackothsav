@@ -199,6 +199,10 @@ a {
 	margin: 0rem 5rem 0 10rem;
 }
 
+.nav-bar .logo,
+.nav-bar .logo h1 {
+	background-color: transparent;
+}
 .nav-links {
 	background-color: transparent;
 
@@ -280,6 +284,7 @@ a {
 		text-align: center;
 		transition: 0.3s;
 		overflow: hidden;
+		background-color: var(--color-main);
 	}
 
 	.nav-links > li > a::after {
@@ -403,6 +408,10 @@ a {
 		font-size: 6vw;
 	}
 
+	.active .hero h1 {
+		display: none;
+	}
+
 	.hero .banner {
 		height: 70vh;
 	}
@@ -474,7 +483,7 @@ a {
 
 @media screen and (max-width: 700px) {
 	#text-container {
-		/* height: 600px; */
+		height: auto;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
@@ -483,6 +492,10 @@ a {
 	#text-container > p {
 		width: 90%;
 		padding: 0;
+	}
+
+	#text-container .dummy {
+		margin: 1rem 0;
 	}
 }
 /*************************************  About End ********************************************/
