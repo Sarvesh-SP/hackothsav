@@ -349,16 +349,54 @@ a {
 .hero {
 	/* position: relative; */
 	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 
 	height: 90vh;
 }
 
-.hero h1 {
+.hero h1,
+.hero .info {
+	margin-left: calc(10% - 20px);
 	font-size: 3rem;
 	z-index: 1;
 	background: transparent;
+}
+
+.hero .cursor {
+	background-color: transparent;
+}
+
+.hero .info p {
+	font-size: 1.2rem;
+	background: transparent;
+}
+
+.hero .info .button-container {
+	background: transparent;
+}
+
+.hero .info button {
+	margin: 1rem 0 0 0;
+	width: 9rem;
+	padding: 1rem;
+	font-size: 1rem;
+	background: var(--color-accent);
+	border-radius: 0.4rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.hero .info .download {
+	width: max-content;
+}
+
+.hero .info button:hover {
+	background-color: #0077b5;
+	color: #000;
 }
 
 .hero h1 .typer {
@@ -414,7 +452,8 @@ a {
 		font-size: 6vw;
 	}
 
-	.active .hero h1 {
+	.active .hero h1,
+	.active .hero .info {
 		display: none;
 	}
 
