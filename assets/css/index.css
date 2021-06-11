@@ -746,6 +746,11 @@ a {
 }
 
 .faq-section .faq-items-grid .faq-item .faq-answer {
+	display: none;
+}
+
+.faq-section .faq-items-grid .faq-item .faq-answer.display {
+	display: block;
 	background-color: var(--color-main-light);
 	border-radius: 0 0 0.5rem 0.5rem;
 }
