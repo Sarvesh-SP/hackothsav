@@ -746,6 +746,11 @@ a {
 }
 
 .faq-section .faq-items-grid .faq-item .faq-answer {
+	display: none;
+}
+
+.faq-section .faq-items-grid .faq-item .faq-answer.display {
+	display: block;
 	background-color: var(--color-main-light);
 	border-radius: 0 0 0.5rem 0.5rem;
 }
@@ -758,6 +763,32 @@ a {
 	background-color: var(--color-main);
 	border-radius: 0 0 0.5rem 0.5rem;
 	overflow: hidden;
+}
+
+/* For angle down */
+.faq-section .faq-items-grid .faq-item .faq-text {
+	position: relative;
+}
+
+.faq-text .angle-down {
+	position: absolute;
+	background: transparent;
+	top: 12%;
+	right: 1.5rem;
+	width: 2rem;
+	height: 100%;
+	cursor: pointer;
+}
+
+.faq-text .angle-down img {
+	background: transparent;
+	width: 100%;
+	filter: brightness(1) invert(0.5);
+	transition: filter 0.3s;
+}
+
+.faq-text .angle-down img:hover {
+	filter: brightness(1) invert(1);
 }
 
 @media screen and (max-width: 700px) {
