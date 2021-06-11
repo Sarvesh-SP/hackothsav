@@ -483,7 +483,7 @@ a {
 
 @media screen and (max-width: 700px) {
 	#text-container {
-		/* height: 600px; */
+		height: auto;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
@@ -492,6 +492,10 @@ a {
 	#text-container > p {
 		width: 90%;
 		padding: 0;
+	}
+
+	#text-container .dummy {
+		margin: 1rem 0;
 	}
 }
 /*************************************  About End ********************************************/
