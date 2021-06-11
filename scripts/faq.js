@@ -2,7 +2,7 @@ let faqQuestion = document.querySelectorAll(".faq-text");
 let faqAnswer = document.querySelectorAll(".faq-answer");
 
 const displayFAQ = i => {
-	console.log(i);
+	// console.log(i);
 	faqAnswer[i].classList.toggle("display");
 };
 
