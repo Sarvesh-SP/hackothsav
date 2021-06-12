@@ -1,4 +1,4 @@
-var pathEls = document.querySelectorAll("path");
+var pathEls = document.querySelectorAll(".dic");
 for (var i = 0; i < pathEls.length; i++) {
 	var pathEl = pathEls[i];
 	var offset = anime.setDashoffset(pathEl);
