@@ -138,9 +138,8 @@ body {
 
 .sub-footer,
 #faq,
-.container,
-.content-section,
 .faq-text {
+	overflow-x: hidden !important;
 	overflow-y: hidden !important;
 }
 
