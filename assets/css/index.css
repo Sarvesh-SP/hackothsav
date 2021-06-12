@@ -101,6 +101,7 @@
 	color: var(--font-color);
 	font-family: "Sen", sans-serif;
 	letter-spacing: 0.01em;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -1108,5 +1109,25 @@ i.fa-youtube:hover {
 }
 i.fa-linkedin-in:hover {
 	color: var(--linked-in);
+}
+@media screen and (max-width: 700px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sub-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-box {
+    padding-top: 2rem;
+
+  }
+  
+  .social-box {
+    padding-right: 45px;
+  }
 }
 /************************************************************** Footer end **********************************/
