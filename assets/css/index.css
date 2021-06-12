@@ -407,7 +407,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .hero h1 {
-	top: 15rem;
+	/* top: 15rem; */
+	top: calc(10vh + 10%);
+}
+
+.hero .info {
+	top: calc(10vh + 26%);
 }
 
 .hero .cursor {
