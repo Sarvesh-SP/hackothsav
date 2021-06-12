@@ -138,9 +138,8 @@ body {
 
 .sub-footer,
 #faq,
-.container,
-.content-section,
 .faq-text {
+	overflow-x: hidden !important;
 	overflow-y: hidden !important;
 }
 
@@ -388,21 +387,27 @@ body::-webkit-scrollbar-thumb:hover {
 /*************************************  Hero Start ********************************************/
 
 .hero {
-	/* position: relative; */
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 
-	height: 90vh;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .hero h1,
 .hero .info {
+	position: absolute;
 	margin-left: calc(10% - 20px);
 	font-size: 3rem;
 	z-index: 1;
 	background: transparent;
+}
+
+.hero h1 {
+	top: 15rem;
 }
 
 .hero .cursor {
@@ -444,67 +449,43 @@ body::-webkit-scrollbar-thumb:hover {
 	background: transparent;
 }
 
-.hero .banner {
-	position: absolute;
-	top: 0;
-	left: 0;
+.anim,
+.anim svg {
+	position: relative;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 }
-
-.hero .banner video {
-	/* width: 100vh; */
-	height: 100vw;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	min-height: 100%;
-	min-width: 100%;
-	transform: translate(-50%, -50%);
-}
-
-@media screen and (min-width: 1660px) and (max-width: 2920px) {
-	.hero .banner video {
-		width: 100vh;
-	}
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1660px) {
-	.hero {
-		height: 87vh;
-	}
-	.hero .banner {
-		height: 100vh;
-	}
-	.hero .banner video {
-		/* width: 100vw; */
-		height: 100vh;
-		top: 50%;
-	}
+.anim path {
+	stroke-width: 2;
 }
 
 @media screen and (max-width: 700px) {
 	.hero {
-		height: 58vh;
+		height: 90vh;
 	}
 
 	.hero h1 {
 		font-size: 6vw;
+		top: 7rem;
+	}
+
+	.hero .info {
+		top: 12rem;
+	}
+
+	.anim,
+	.anim svg {
+		height: 100%;
+		width: 120%;
+	}
+
+	.anim path {
+		stroke-width: 4;
 	}
 
 	.active .hero h1,
 	.active .hero .info {
 		display: none;
-	}
-
-	.hero .banner {
-		height: 70vh;
-	}
-	.hero .banner video {
-		/* width: 100vw; */
-		/* height: 100vh; */
-		top: 50%;
 	}
 }
 
