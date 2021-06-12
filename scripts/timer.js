@@ -50,7 +50,7 @@
       var m = Math.floor(delta / 60) % 60;
       delta -= m * 60;
       var s = Math.floor(delta % 60);
- 
+
       d = pad3(d);
       h = pad2(h);
       m = pad2(m);
@@ -182,7 +182,7 @@
 
   // FlipClock hackothsava
   new FlipClock(document.getElementById('flipclock-1'), {
-    endDate: new Date(currentYear, 04, 30),
+    endDate: new Date(currentYear, 05, 13),
     labels: {
         days: 'Days',
         hours: 'Hours',
@@ -190,6 +190,5 @@
         seconds: 'Seconds'
     }
   });  
-  
-  
+
 })();
