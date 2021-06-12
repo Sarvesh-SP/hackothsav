@@ -531,6 +531,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #text-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
@@ -542,11 +543,10 @@ body::-webkit-scrollbar-thumb:hover {
 	font-size: large;
 }
 
-#text-container .dummy {
-	background-color: #00ffa4;
+/* #text-container .bongo-container {
 	width: 30%;
 	height: 30vh;
-}
+} */
 
 @media screen and (max-width: 700px) {
 	.heading {
