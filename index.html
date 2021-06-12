@@ -17,13 +17,22 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
 		<link rel="stylesheet" href="/assets/css/index.css" />
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+
 		<script async src="/scripts/typer.js"></script>
 		<script async src="/scripts/timer.js"></script>
 		<script async src="/scripts/burger.js"></script>
 		<script async src="/scripts/themeToggle.js"></script>
 		<script async src="/scripts/faq.js"></script>
+
 		<!-- <script async src="/scripts/scrolling.js"></script> -->
 	</head>
 
@@ -106,7 +115,17 @@
 					<div class="line"></div>
 				</div>
 				<br />
-				<div id="text-container">
+				<div
+					id="text-container"
+					data-aos="fade-up"
+					data-aos-offset="-300"
+					data-aos-delay="0"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false"
+					data-aos-anchor-placement="top-center"
+				>
 					<p>
 						Lorem Ipsum is simply dummy text of the printing and
 						typesetting industry.Lorem Ipsum has been the industry's
@@ -130,7 +149,7 @@
 		<br />
 		<br />
 		<!--Timer section End-------------------------------------------------------------------------------------- -->
-		<p style="text-align: center; font-size: 3rem;">COUNTDOWN TO BIG DAY!</p>
+		<p style="text-align: center; font-size: 3rem">COUNTDOWN TO BIG DAY!</p>
 		<div class="flipclock" id="flipclock-1"></div>
 		<!--Timer section End-------------------------------------------------------------------------------------- -->
 		<!-- prizes page------------------------------------------------------------------------------------------- -->
@@ -589,5 +608,9 @@
 			</div>
 		</div>
 		<!--Footer page End-------------------------------------------------------------------------------------- -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
