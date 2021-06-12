@@ -136,11 +136,11 @@ body {
 	overflow-x: hidden;
 }
 
-.sub-footer {
-	overflow-y: hidden;
-}
-
-.container {
+.sub-footer,
+#faq,
+.container,
+.content-section,
+.faq-text {
 	overflow-y: hidden;
 }
 
