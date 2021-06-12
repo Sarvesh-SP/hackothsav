@@ -559,6 +559,10 @@ body::-webkit-scrollbar-thumb:hover {
 		flex-direction: column;
 	}
 
+	.heading .section-title {
+		text-align: center;
+	}
+
 	.heading .line {
 		flex: none;
 		width: 90%;
@@ -626,6 +630,11 @@ body::-webkit-scrollbar-thumb:hover {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+	}
+
+	#headline {
+		text-align: center;
+		font-size: 7vw;
 	}
 }
 /*************************************  Timer end ********************************************/
@@ -873,6 +882,7 @@ body::-webkit-scrollbar-thumb:hover {
 .faq-section {
 	display: flex;
 	flex-direction: column;
+	margin-top: 2rem;
 }
 
 .faq-section .faq-items-grid {
@@ -981,7 +991,7 @@ body::-webkit-scrollbar-thumb:hover {
 .footer {
 	display: flex;
 	width: 100%;
-	padding-top: 128px;
+	padding-top: 4rem;
 	padding-right: 3vw;
 	padding-left: 3vw;
 
