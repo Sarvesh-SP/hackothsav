@@ -17,6 +17,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 		<link rel="stylesheet" href="/assets/css/index.css" />
 		<script async src="/scripts/typer.js"></script>
 		<script async src="/scripts/timer.js"></script>
@@ -81,8 +82,17 @@
 					data-delay="100"
 					data-deleteDelay="1000"
 				></span>
+				<span class="cursor"></span>
 			</h1>
-			<span class="cursor"></span>
+			<div class="info">
+				<p>9<sup>th</sup> to 11<sup>th</sup> July 2021</p>
+				<div class="button-container">
+					<a href="/"><button>Register Now</button></a>
+					<a href="/"
+						><button class="download">Download Rules</button></a
+					>
+				</div>
+			</div>
 			<div class="banner">
 				<video src="/assets/background.mp4" loop autoplay muted></video>
 			</div>
@@ -120,22 +130,8 @@
 		<br />
 		<br />
 		<!--Timer section End-------------------------------------------------------------------------------------- -->
-		<div class="timer-container">
-			<h1 id="headline">Countdown to The Big day</h1>
-			<div id="countdown">
-				<ul>
-					<li><span id="days"></span> Days</li>
-					<li><span id="hours"></span> Hours</li>
-					<li><span id="minutes"></span> Minutes</li>
-					<li><span id="seconds"></span> Seconds</li>
-				</ul>
-			</div>
-			<!-- <div id="content" class="emoji">
-			<span>🥳</span>
-			<span>🎉</span>
-			<span>🎂</span>
-		</div> -->
-		</div>
+		<p style="text-align: center; font-size: 3rem;">COUNTDOWN TO BIG DAY!</p>
+		<div class="flipclock" id="flipclock-1"></div>
 		<!--Timer section End-------------------------------------------------------------------------------------- -->
 		<!-- prizes page------------------------------------------------------------------------------------------- -->
 		<div id="prizes" class="container">
@@ -224,6 +220,7 @@
 									<img
 										src="assets/images/prueba.svg"
 										alt="Prueba-logo"
+										class="prueba"
 									/>
 									<a
 										href="https://www.prueba.io/"
@@ -234,7 +231,7 @@
 											alt="Prueba-logo"
 									/></a>
 								</li>
-								<li>
+								<li class="ieee-li">
 									<img
 										src="assets/images/ieee.png"
 										alt="IEEE-logo"
