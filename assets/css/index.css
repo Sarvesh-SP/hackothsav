@@ -130,6 +130,20 @@ a {
 	cursor: pointer;
 }
 
+/* overflow problems */
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+.sub-footer {
+	overflow-y: hidden;
+}
+
+.container {
+	overflow-y: hidden;
+}
+
 /* ******************* scroll bar *************** */
 body::-webkit-scrollbar {
 	width: 15px;
@@ -588,26 +602,25 @@ body::-webkit-scrollbar-thumb:hover {
 /* ----------------------------------------------------------------------------------------------------------- */
 /*************************************  Timer start ********************************************/
 
-  
-  .flipclock {
+.flipclock {
 	display: flex;
 	justify-content: center;
 	padding: 40px;
 	box-sizing: border-box;
-  }
-  
-  .flipclock * {
+}
+
+.flipclock * {
 	box-sizing: inherit;
-  }
-  
-  .leaf {
+}
+
+.leaf {
 	display: flex;
 	flex-direction: column;
 	margin: 0 4px;
 	perspective: 300px;
-  }
-  
-  .leaf::after {
+}
+
+.leaf::after {
 	content: attr(data-label);
 	position: absolute;
 	top: 100%;
@@ -619,12 +632,12 @@ body::-webkit-scrollbar-thumb:hover {
 	font-weight: 400;
 	text-transform: uppercase;
 	opacity: 0.5;
-  }
-  
-  .top,
-  .bottom,
-  .leaf-front,
-  .leaf-back {
+}
+
+.top,
+.bottom,
+.leaf-front,
+.leaf-back {
 	position: relative;
 	display: block;
 	height: 64px;
@@ -633,11 +646,11 @@ body::-webkit-scrollbar-thumb:hover {
 	color: #2d3748;
 	overflow: hidden;
 	border-color: #2d3748;
-  }
-  .top span,
-  .bottom span,
-  .leaf-front span,
-  .leaf-back span {
+}
+.top span,
+.bottom span,
+.leaf-front span,
+.leaf-back span {
 	position: absolute;
 	left: 50%;
 	width: 100%;
@@ -647,119 +660,119 @@ body::-webkit-scrollbar-thumb:hover {
 	font-size: 80px;
 	line-height: 128px;
 	transform: translateX(-50%);
-  }
-  
-  .leaf._3-digits .top,
-  .leaf._3-digits .bottom,
-  .leaf._3-digits .leaf-front,
-  .leaf._3-digits .leaf-back {
+}
+
+.leaf._3-digits .top,
+.leaf._3-digits .bottom,
+.leaf._3-digits .leaf-front,
+.leaf._3-digits .leaf-back {
 	width: 148px;
-  }
-  
-  .top,
-  .leaf-front {
+}
+
+.top,
+.leaf-front {
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 	margin-bottom: 1px;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-  }
-  .top span,
-  .leaf-front span {
+}
+.top span,
+.leaf-front span {
 	top: 0;
-  }
-  
-  .leaf-front {
+}
+
+.leaf-front {
 	position: absolute;
 	z-index: 10;
-  }
-  
-  .bottom,
-  .leaf-back {
+}
+
+.bottom,
+.leaf-back {
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 	border-top-style: solid;
 	border-top-width: 1px;
-  }
-  .bottom span,
-  .leaf-back span {
+}
+.bottom span,
+.leaf-back span {
 	bottom: 0;
-  }
-  
-  .leaf-back {
+}
+
+.leaf-back {
 	position: absolute;
 	top: 64px;
 	z-index: 10;
-  }
-  
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
 	.flipclock {
-	  padding: 6.6666666667vw;
+		padding: 6.6666666667vw;
 	}
-  
+
 	.leaf {
-	  margin: 0 0.6666666667vw;
+		margin: 0 0.6666666667vw;
 	}
-  
+
 	.leaf::after {
-	  margin-top: 1.3333333333vw;
-	  font-size: 2.3333333333vw;
+		margin-top: 1.3333333333vw;
+		font-size: 2.3333333333vw;
 	}
-  
+
 	.top,
-  .bottom,
-  .leaf-front,
-  .leaf-back {
-	  height: 10.6666666667vw;
-	  width: 20vw;
+	.bottom,
+	.leaf-front,
+	.leaf-back {
+		height: 10.6666666667vw;
+		width: 20vw;
 	}
 	.top span,
-  .bottom span,
-  .leaf-front span,
-  .leaf-back span {
-	  height: 21.3333333333vw;
-	  font-size: 13.3333333333vw;
-	  line-height: 21.3333333333vw;
+	.bottom span,
+	.leaf-front span,
+	.leaf-back span {
+		height: 21.3333333333vw;
+		font-size: 13.3333333333vw;
+		line-height: 21.3333333333vw;
 	}
-  
+
 	.leaf._3-digits .top,
-  .leaf._3-digits .bottom,
-  .leaf._3-digits .leaf-front,
-  .leaf._3-digits .leaf-back {
-	  width: 24.6666666667vw;
+	.leaf._3-digits .bottom,
+	.leaf._3-digits .leaf-front,
+	.leaf._3-digits .leaf-back {
+		width: 24.6666666667vw;
 	}
-  
+
 	.top,
-  .leaf-front {
-	  border-top-left-radius: 1vw;
-	  border-top-right-radius: 1vw;
+	.leaf-front {
+		border-top-left-radius: 1vw;
+		border-top-right-radius: 1vw;
 	}
-  
+
 	.bottom,
-  .leaf-back {
-	  border-bottom-left-radius: 1vw;
-	  border-bottom-right-radius: 1vw;
-	}
-  
 	.leaf-back {
-	  top: 10.6666666667vw;
+		border-bottom-left-radius: 1vw;
+		border-bottom-right-radius: 1vw;
 	}
-  }
-  .leaf-front {
+
+	.leaf-back {
+		top: 10.6666666667vw;
+	}
+}
+.leaf-front {
 	transform-origin: bottom center;
 	transform: rotateX(0deg);
 	transform-style: preserve-3d;
 	transition-delay: 0.3s;
-  }
-  
-  .leaf-back {
+}
+
+.leaf-back {
 	transform-origin: top center;
 	transform: rotateX(90deg);
 	transform-style: preserve-3d;
 	transition-delay: 0s;
-  }
-  
-  .bottom::before {
+}
+
+.bottom::before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -768,32 +781,38 @@ body::-webkit-scrollbar-thumb:hover {
 	width: 100%;
 	height: 0%;
 	background: black;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.8) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
 	filter: blur(10px);
-  }
-  
-  .flip .leaf-front {
+}
+
+.flip .leaf-front {
 	transform: rotateX(-90deg);
-	transition: transform 0.3s ease-in, background-color 0.3s ease-in, color 0.3s ease-in;
+	transition: transform 0.3s ease-in, background-color 0.3s ease-in,
+		color 0.3s ease-in;
 	transition-delay: 0s;
 	color: black;
 	background-color: #737373;
-  }
-  .flip .leaf-back {
+}
+.flip .leaf-back {
 	transform: rotateX(0deg);
-	transition: transform 0.3s ease-in, background-color 0.3s ease-in, color 0.3s ease-in;
+	transition: transform 0.3s ease-in, background-color 0.3s ease-in,
+		color 0.3s ease-in;
 	transition-delay: 0.3s;
-  }
-  .flip .bottom::before {
+}
+.flip .bottom::before {
 	transition: height 0.3s ease-in-out;
 	transition-delay: 0.15s;
 	height: 100%;
-  }
+}
 
-	#headline {
-		text-align: center;
-		font-size: 7vw;
-	}
+#headline {
+	text-align: center;
+	font-size: 7vw;
+}
 
 /*************************************  Timer end ********************************************/
 /* ----------------------------------------------------------------------------------------------------------- */
