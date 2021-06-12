@@ -182,7 +182,7 @@
 
   // FlipClock hackothsava
   new FlipClock(document.getElementById('flipclock-1'), {
-    endDate: new Date(currentYear, 05, 13),
+    endDate: new Date(currentYear, 06, 9),
     labels: {
         days: 'Days',
         hours: 'Hours',
