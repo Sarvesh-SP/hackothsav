@@ -13,7 +13,7 @@
 
 h2.rule-title {
     font-family: "Sen";
-    font-size: 1.8rem;
+    font-size: 1.5rem;/*modified*/
     font-weight: 600;
     padding: 10px 10px 10px 0;
 }
@@ -24,16 +24,31 @@ h2.rule-title::before {
 
 .rule-line {
     flex: 1;
-    height: 1px;
-    width: 985px;
+    height: 0.1rem;/*modified*/
+    width: 100%;/*modified*/
     background: var(--colour-pink);
 }
 
 .rule-content {
+    margin-left: 3rem;/*modified*/
     margin-left: 6rem;
     line-height: 1.8rem;
+    width: 100%;/*modified*/
 }
 
 .rule-content > ul li {
     padding-bottom: 1rem;
+}
+/*modified*/
+@media screen and (max-width: 700px) {
+	.rule-heading {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 1rem;
+	}
+
+	.rule-content {
+		margin-left: 0;
+		font-size: 10px;
+	}
 }
