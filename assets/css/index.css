@@ -877,6 +877,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .ieee-li img {
+	transform: scale(0.85);
 	background: transparent;
 	filter: brightness(1) invert(0.8);
 }
@@ -887,12 +888,8 @@ body::-webkit-scrollbar-thumb:hover {
 	transform: scale(1.1);
 }
 
-.our-clients .ieee-li:hover {
-	transform: scale(1.3);
-}
-
 .our-clients .ieee-li img:hover {
-	transform: scale(1.04);
+	transform: scale(0.95);
 }
 /* .our-clients ul li:hover img:nth-child(1) {
 	transform: translateY(-100%);
