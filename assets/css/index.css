@@ -55,6 +55,11 @@
 	#1a5ef3
 	#131435
 	*/
+	/*Seclected colors----------------------------
+	--color-main: #95d5CE;
+	--font-color: #49274A;
+	--color-accent:#8657c5;
+*/
 	--title-font: "Sen", sans-serif;
 	--roboto: "Roboto Mono", monospace;
 	/* --color-main: #161616; */
@@ -1393,3 +1398,44 @@ i.fa-linkedin-in:hover {
 	}
 }
 /************************************************************** Footer end **********************************/
+/************************************************************** Rules ***************************************/
+.rules {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    margin-top: 50px;
+}
+
+.rule-heading {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+
+h2.rule-title {
+    font-family: "Sen";
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px 10px 10px 0;
+}
+
+h2.rule-title::before {
+    content: '#';
+}
+
+.rule-line {
+    flex: 1;
+    height: 1px;
+    width: 985px;
+    background: var(--colour-pink);
+}
+
+.rule-content {
+    margin-left: 6rem;
+    line-height: 1.8rem;
+}
+
+.rule-content > ul li {
+    padding-bottom: 1rem;
+}
+/******************************************************** Rules end ******************************************************/
