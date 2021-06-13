@@ -177,6 +177,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
 	background: var(--color-secondary-light);
+	margin-bottom: 30rem;
 }
 
 body::-webkit-scrollbar-thumb {
