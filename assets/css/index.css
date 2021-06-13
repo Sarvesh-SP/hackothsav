@@ -144,11 +144,11 @@ body {
 }
 
 /* ******************* scroll bar *************** */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
 	width: 15px;
 }
 
-/* Track */
+
 body::-webkit-scrollbar-track {
 	background: radial-gradient(
 		circle at 30% 107%,
@@ -160,15 +160,31 @@ body::-webkit-scrollbar-track {
 	);
 }
 
-/* Handle */
+
 body::-webkit-scrollbar-thumb {
 	background: #111;
 }
 
-/* Handle on hover */
+
 body::-webkit-scrollbar-thumb:hover {
 	background: #d6249f;
+} */
+
+/* -------------------vin----------------------- */
+body::-webkit-scrollbar {
+	width: 9px;
 }
+
+body::-webkit-scrollbar-track {
+	background: var(--color-secondary-light);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--color-accent);
+	border-radius: 1rem;
+	border: 3px solid transparent;
+}
+/* ******************* scroll bar end *************** */
 
 /*************************************  toggleButton Start ********************************************/
 .sun-moon-container {
