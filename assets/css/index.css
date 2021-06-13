@@ -503,7 +503,8 @@ body::-webkit-scrollbar-thumb {
 .anim svg {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
+	opacity: 0.7;
 }
 .anim path {
 	stroke-width: 2;
@@ -516,17 +517,20 @@ body::-webkit-scrollbar-thumb {
 
 	.hero h1 {
 		font-size: 6vw;
-		top: 7rem;
+		/* top: 7rem; */
+		top: 13rem;
 	}
 
 	.hero .info {
-		top: 12rem;
+		/* top: 12rem; */
+		top: 18rem;
 	}
 
 	.anim,
 	.anim svg {
 		height: 100%;
 		width: 120%;
+		opacity: 0.7;
 	}
 
 	.anim path {
@@ -980,15 +984,24 @@ body::-webkit-scrollbar-thumb {
 	font-family: "Roboto", monospace;
 }
 
+.flip-card-back {
+	background-color: var(--color-main-light);
+	color: white;
+	transform: rotateY(180deg);
+	justify-content: center;
+}
+
 .flip-card-back span {
 	color: var(--color-accent);
 	background-color: var(--color-main-light);
 }
 
-.flip-card-back {
-	background-color: var(--color-main-light);
-	color: white;
-	transform: rotateY(180deg);
+.flip-card-back > span {
+	width: 90%;
+	text-align: center;
+	color: var(--font-color);
+	font-size: 1rem !important;
+	opacity: 0.7;
 }
 
 @media screen and (max-width: 700px) {
@@ -1006,6 +1019,10 @@ body::-webkit-scrollbar-thumb {
 	.prizes .flip-card-back h1,
 	.prizes .flip-card-back span {
 		font-size: 5vw;
+	}
+
+	.flip-card-back > span {
+		font-size: 3vw !important;
 	}
 }
 
