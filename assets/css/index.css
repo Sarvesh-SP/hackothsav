@@ -63,18 +63,18 @@
 	--title-font: "Sen", sans-serif;
 	--roboto: "Roboto Mono", monospace;
 	/* --color-main: #161616; */
-	--color-main: #000000;
+	--color-main: #95d5ce;
 	--color-main-light: #131435;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
 	--color-primary-light: rgba(40, 129, 245, 0.18431);
-	--color-accent: #28f586;
+	--color-accent: #8657c5;
 	--color-accent-light: rgba(40, 245, 136, 0.07451);
 	--color-accent-2: #f31154;
 	--color-accent-2-light: rgba(12, 206, 93, 0.18431);
 	--color-background: #e2e7ee;
 	--color-background-light: #eef1f6;
-	--font-color: #fff;
+	--font-color: #49274a;
 	--color-button-text: #fff;
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
@@ -462,6 +462,18 @@ body::-webkit-scrollbar-thumb {
 
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.nav-bar .logo {
+		margin-left: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-bar .logo h1 {
+		font-size: large;
 	}
 }
 
@@ -1697,9 +1709,53 @@ h2.rule-title::before {
 	box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
+.register {
+	margin-top: 50px;
+}
+
+.register-heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 6rem;
+	width: 80%;
+}
+
+h2.register-title {
+	font-family: "Sen";
+	font-size: 1.5rem; /*modified*/
+	font-weight: 600;
+	padding: 10px 10px 10px 0px;
+	margin-left: 10px;
+}
+
+h2.register-title::before {
+	content: "#";
+}
+
+.register-line {
+	/* flex: 1; */
+	height: 0.1rem; /*modified*/
+	width: 90%;
+	background: var(--colour-pink);
+}
+
 @media screen and (max-width: 700px) {
 	.register-content iframe {
 		width: 100vw;
 		height: 80vh;
+	}
+
+	.register-heading {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 0rem;
+		width: 100%;
+	}
+
+	.register-line {
+		margin-bottom: 2rem;
+		width: 100%;
 	}
 }
