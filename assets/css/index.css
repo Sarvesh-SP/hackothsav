@@ -1182,17 +1182,17 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border-radius: 0.5rem;
+	/* border-radius: 0.5rem;
 	border: 0.2rem;
 	border-style: solid;
-	border-color: var(--color-main-light);
+	border-color: var(--color-main-light); */
 	padding: 0.4rem;
 }
 
-.track-panel:hover,
+/* .track-panel:hover,
 .track-panel:hover * {
 	background-color: var(--color-main-light);
-}
+} */
 
 .track-panel .track-box {
 	border-radius: 20%;
@@ -1209,6 +1209,10 @@ body::-webkit-scrollbar-thumb {
 	float: left;
 	width: 3rem;
 	align-content: center;
+}
+
+#track-1 {
+	border: 3px solid var(--colour-pink);
 }
 
 .track-panel .track-panel-text {
