@@ -1,5 +1,14 @@
-:root {
+:root[theme="dark"] {
 	--bg: #1a1e2d;
+	--green: #a5ea9b;
+	--pink: #ff61d8;
+	--blue: #569cfa;
+	--orange: #ffcc81;
+	--cyan: #7ed1e2;
+}
+
+:root[theme="light"] {
+	--bg: #454a5f;
 	--green: #a5ea9b;
 	--pink: #ff61d8;
 	--blue: #569cfa;
