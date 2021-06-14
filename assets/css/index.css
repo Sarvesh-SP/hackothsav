@@ -18,6 +18,7 @@
 	--color-background: #e2e7ee;
 	--color-background-light: #eef1f6;
 	--font-color: #fff;
+	--text-body:hsla(0, 0%, 100%, 0.7);
 	--color-button-text: #fff;
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
@@ -63,8 +64,8 @@
 	--title-font: "Sen", sans-serif;
 	--roboto: "Roboto Mono", monospace;
 	/* --color-main: #161616; */
-	--color-main: #95d5ce;
-	--color-main-light: #131435;
+	--color-main: #E1E5EA`;
+	--color-main-light: #F8F5F1;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
 	--color-primary-light: rgba(40, 129, 245, 0.18431);
@@ -75,6 +76,7 @@
 	--color-background: #e2e7ee;
 	--color-background-light: #eef1f6;
 	--font-color: #49274a;
+	--text-body:#6e12ca;
 	--color-button-text: #fff;
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
@@ -93,6 +95,7 @@
 	--primary-shadow: 0px 10px 20px rgba(16, 68, 209, 0.185);
 	--popup-shadow: 0px 20px 35px rgba(7, 74, 126, 0.123);
 	--popup-background: rgba(20, 23, 54, 0.17255);
+	transition: all 10s;
 }
 
 /*********************** global variable declaration End ********************************************/
@@ -1418,7 +1421,7 @@ body::-webkit-scrollbar-thumb {
 	overflow: visible;
 	padding-top: 4px;
 	padding-bottom: 4px;
-	color: hsla(0, 0%, 100%, 0.7);
+	color: var(--text-body);
 	text-decoration: none;
 }
 
@@ -1495,7 +1498,7 @@ ul {
 .rights {
 	font-size: 12px;
 	line-height: 18px;
-	color: hsla(0, 0%, 100%, 0.7);
+	color: var(--text-body);
 }
 
 .text-body {
@@ -1510,7 +1513,7 @@ i.fa-facebook-f:hover {
 	color: var(--facebook);
 }
 i.fa-instagram {
-	color: white;
+	color: var(--font-color);
 }
 
 i.fa-instagram:hover {
