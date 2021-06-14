@@ -18,7 +18,7 @@
 	--color-background: #e2e7ee;
 	--color-background-light: #eef1f6;
 	--font-color: #fff;
-	--text-body:hsla(0, 0%, 100%, 0.7);
+	--text-body: hsla(0, 0%, 100%, 0.7);
 	--color-button-text: #fff;
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
@@ -65,7 +65,7 @@
 	--roboto: "Roboto Mono", monospace;
 	/* --color-main: #161616; */
 	--color-main: #E1E5EA`;
-	--color-main-light: #F8F5F1;
+	--color-main-light: #f8f5f1;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
 	--color-primary-light: rgba(40, 129, 245, 0.18431);
@@ -76,7 +76,7 @@
 	--color-background: #e2e7ee;
 	--color-background-light: #eef1f6;
 	--font-color: #49274a;
-	--text-body:#6e12ca;
+	--text-body: #6e12ca;
 	--color-button-text: #fff;
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
@@ -151,31 +151,6 @@ body {
 }
 
 /* ******************* scroll bar *************** */
-/* body::-webkit-scrollbar {
-	width: 15px;
-}
-
-
-body::-webkit-scrollbar-track {
-	background: radial-gradient(
-		circle at 30% 107%,
-		#fdf497 0%,
-		#fdf497 5%,
-		#fd5949 45%,
-		#d6249f 60%,
-		#285aeb 90%
-	);
-}
-
-
-body::-webkit-scrollbar-thumb {
-	background: #111;
-}
-
-
-body::-webkit-scrollbar-thumb:hover {
-	background: #d6249f;
-} */
 
 /* -------------------vin----------------------- */
 body::-webkit-scrollbar {
@@ -390,6 +365,11 @@ body::-webkit-scrollbar-thumb {
 	.active .hero h1,
 	.active .hero .info {
 		display: none;
+	}
+
+	.nav-bar .logo a {
+		display: flex;
+		align-items: center;
 	}
 
 	.nav-links,
