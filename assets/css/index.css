@@ -827,6 +827,7 @@ body::-webkit-scrollbar-thumb {
 	height: 128px;
 	text-align: center;
 	font-family: "Impact", sans serif;
+	background-color: var(--colour-pink);
 	font-size: 80px;
 	line-height: 128px;
 	transform: translateX(-50%);
