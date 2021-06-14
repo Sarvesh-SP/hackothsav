@@ -1251,6 +1251,13 @@ body::-webkit-scrollbar-thumb {
 	.track-panel-title {
 		align-self: center;
 	}
+
+	.track-items-grid .track-panel {
+		border-radius: 0.5rem;
+		border: 0.2rem;
+		border-style: solid;
+		border-color: var(--color-main-light);
+	}
 }
 
 /********************************* Track end *********************************************/
