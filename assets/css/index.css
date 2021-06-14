@@ -1418,7 +1418,7 @@ border-bottom: 2px solid transparent;
 a {
 	background-color: transparent;
 }
-.footer-list-link a:hover {
+.footer-list-link  a:hover {
 	color: var(--colour-pink);
 	text-decoration: underline;
 }
@@ -1488,17 +1488,13 @@ ul {
 	font-weight: 700;
 }
 
-i.fa-facebook-f:hover,
-i.fa-twitter {
+i.fa-facebook-f:hover {
 	color: var(--facebook);
 }
-i.fa-twitter,
 i.fa-instagram {
 	color: white;
 }
-i.fa-twitter:hover {
-	color: var(--twitter);
-}
+
 i.fa-instagram:hover {
 	color: var(--colour-pink);
 }
