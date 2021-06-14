@@ -344,6 +344,10 @@ body::-webkit-scrollbar-thumb {
 	background-color: white;
 }
 
+.nav-links .download::after {
+	content: none;
+}
+
 @media screen and (max-width: 1000px) {
 	.nav-bar {
 		margin: 0 1rem;
@@ -444,6 +448,14 @@ body::-webkit-scrollbar-thumb {
 
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav-links.active .download {
+		position: fixed;
+	}
+	.nav-links.active .dropdown-link {
+		top: 1rem;
+		right: 0rem;
 	}
 }
 
