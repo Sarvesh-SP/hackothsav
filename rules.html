@@ -1,512 +1,289 @@
 <!DOCTYPE html>
 <html lang="en" theme="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hackothsav</title>
-		<link
-			rel="shortcut icon"
-			href="assets/images/favicon.ico"
-			type="image/x-icon"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-		/>
-		<link rel="stylesheet" href="assets/css/index.css" />
-		<link rel="stylesheet" href="assets/css/rules.css" />
-		<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
 
-		<link href="assets/css/bongo.css" rel="stylesheet" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hackothsav</title>
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+	<link rel="stylesheet" href="assets/css/index.css" />
+	<link rel="stylesheet" href="assets/css/rules.css" />
+	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
 
-		<script async src="scripts/typer.js"></script>
-		<script async src="scripts/timer.js"></script>
-		<script async src="scripts/burger.js"></script>
-		<script async src="scripts/themeToggle.js"></script>
-		<script async src="scripts/faq.js"></script>
+	<link href="assets/css/bongo.css" rel="stylesheet" />
 
-		<!-- <script async src="/scripts/scrolling.js"></script> -->
-	</head>
+	<script async src="scripts/typer.js"></script>
+	<script async src="scripts/timer.js"></script>
+	<script async src="scripts/burger.js"></script>
+	<script async src="scripts/themeToggle.js"></script>
+	<script async src="scripts/faq.js"></script>
 
-	<body>
-		<!-- Nav bar maccha --------------------------------------------------------------------------->
-		<nav class="nav-bar">
-			<div class="logo">
-				<!-- <a href="/"
-					><img
-						src="/assets/images/image2vector.svg"
-				/></a> -->
-				<a href="#">
-					<h1>HACKOTH<span>SAV</span></h1>
-				</a>
-			</div>
-			<ul class="nav-links">
-				<li><a class="active link" href="index.html">Home</a></li>
-				<li><a class="link" href="index.html#about">About</a></li>
+	<!-- <script async src="/scripts/scrolling.js"></script> -->
+</head>
+
+<body>
+	<!-- Nav bar maccha --------------------------------------------------------------------------->
+	<nav class="nav-bar">
+		<div class="logo " style="display: flex;">
+			<a href="index.html"><img src="assets/images/image2vector.svg" style="margin-top: 30px; width: 60px;"></a>
+			<a href="index.html">
+				<h1 style="margin-top: 33px;">HACK<span style="margin-top: 33px;">OTHSAV</span></h1>
+			</a>
+		</div>
+		<ul class="nav-links">
+			<!-- <li><a class="active link" href="#">Home</a></li> -->
+			<li><a class="link" href="index.html#about">About</a></li>
+			<li><a class="link" href="index.html#sponsors">Know Our Sponsors</a></li>
+			<li><a class="link" href="index.html#tracks">Broad Areas</a></li>
+			<li><a class="link" href="index.html#faq">FAQ</a></li>
+			<li><a class="" href="javascript:void();">Downloads</a>
+				<ul class="dropdown-link">
+					<li><a target="_blank" href="assets/docs/Brochure.pdf">Brochure</a></li>
+					<li><a href="assets/docs/HACKOTHSAV_Poster.png">Poster</a></li>
+					<li><a href="assets/docs/Rules and Regulations.pdf">Rules & Regulation</a></li>
+				</ul>
+			</li>
+			<!-- <span id="theme-button"> theme</span> -->
+			<span id="theme-button" class="sun-moon-container">
+				<svg class="sun" style="width: 24px; height: 24px" viewBox="0 0 24 24">
+					<path fill="currentColor"
+						d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z" />
+				</svg>
+
+				<svg class="moon" style="width: 24px; height: 24px" viewBox="0 0 24 24">
+					<path fill="currentColor"
+						d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" />
+				</svg>
+			</span>
+
+		</ul>
+		<div class="hamburger">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+	</nav>
+	<!-- Nav bar End maccha ------------------------------------------------------------------------>
+	<div class="rules">
+		<div class="rule-heading">
+			<h2 class="rule-title">Rules</h2>
+			<div class="rule-line"></div>
+		</div>
+		<div class="rule-content">
+			<ul>
 				<li>
-					<a class="link" href="index.htm#sponsors"
-						>Know Our Sponsors</a
-					>
+					HACKOTHSAV is open to all B.E. / B.Tech. / BCA / MCA
+					students.
 				</li>
-				<li><a class="link" href="index.htm#tracks">Broad Areas</a></li>
-				<li><a class="link" href="index.htm#faq">FAQ</a></li>
+				<li>It is a software-based hackathon.</li>
 				<li>
-					<a class="" href="javascript:void();">Downloads</a>
-					<ul class="dropdown-link">
-						<li>
-							<a target="_blank" href="assets/docs/Brochure.pdf"
-								>Brochure</a
-							>
+					Teams must have a minimum of 2 members or a maximum of 5
+					Members.
+				</li>
+				<li>
+					The two broad areas for this event are “Societal Impact”
+					and “Business Oriented”. Teams must choose a broad area
+					during registration itself.
+				</li>
+				<li>
+					Under each broad area, there will be one or more problem
+					statements for Which teams have to come up with a
+					solution and build a software-based Project within 48
+					hours.
+				</li>
+				<li>
+					Problem statements under each broad area will be
+					disclosed on the day of the hackathon.
+				</li>
+				<li>
+					Every Team will be assigned to a mentor and are needed
+					to submit their to their mentor in each phase.
+				</li>
+				<li>
+					Teams may change their Broad Area after the announcement
+					of the Problem Statements in each Broad Area.
+				</li>
+				<li>
+					If any team needs to change their Broad Area, they need
+					to send a mail to hackothsav@sode-edu.in within 1 Hour
+					of the announcement of Problem Statements.
+				</li>
+				<li>
+					Teams should build apps from scratch (Mobile App /
+					Website / DesktopApp). Teams can solve as many “Problem
+					Statements” as desired (zero, one, Or multiple).
+				</li>
+				<li>
+					Teams must do a minimum of 3 commits on GITHUB with a
+					gap of 4 hours one day (24 hours).
+				</li>
+				<li>
+					Phased evaluation will be at 4 stages. Timings will be 6
+					PM on 9th July, 10 AM on 10th July, 6 PM on 10th July
+					and 10 AM on 11th July.
+				</li>
+				<li>
+					To be considered for the Final Evaluation–teams must
+					submit their projects Sunday, July 11 at 10:00 AM IST.
+					Any late project submissions will not be Accepted.
+				</li>
+				<li>The jury’s decision is final.</li>
+			</ul>
+		</div>
+	</div>
+	<!--Footer page start-------------------------------------------------------------------------------------- -->
+	<div class="footer-div footer-box">
+		<div class="footer">
+			<div class="main-footer" data-aos="fade-down" data-aos-offset="-300" data-aos-delay="200" data-aos-duration="800"
+				data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+				data-aos-anchor-placement="top-center">
+				<div class="quick">
+					<div class="text-body is-bold" data-aos="fade-up" data-aos-offset="-300" data-aos-delay="400"
+						data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center">
+						Quick Links
+					</div>
+					<ul class="footer-links unstyle">
+						<li class="footer-list-link" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="600"
+							data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							<a href="#" class="text-body-3 is-link">Home</a>
 						</li>
-						<li>
-							<a href="assets/docs/HACKOTHSAV_Poster.png"
-								>Poster</a
-							>
+						<li class="footer-list-link" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="800"
+							data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							<a href="#about" class="text-body-3 is-link">About</a>
 						</li>
-						<li>
-							<a href="assets/docs/Rules and Regulations.pdf"
-								>Rules & Regulation</a
-							>
+						<li class="footer-list-link" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="1000"
+							data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							<a href="#count" class="text-body-3 is-link">Countdown</a>
+						</li>
+						<li class="footer-list-link" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="1200"
+							data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							<a href="#prizes" class="text-body-3 is-link">Prizes</a>
+						</li>
+						<li class="footer-list-link" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="1400"
+							data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							<a href="#sponsors" class="text-body-3 is-link">Sponsors</a>
 						</li>
 					</ul>
-				</li>
-				<!-- <span id="theme-button"> theme</span> -->
-				<span id="theme-button" class="sun-moon-container">
-					<svg
-						class="sun"
-						style="width: 24px; height: 24px"
-						viewBox="0 0 24 24"
-					>
-						<path
-							fill="currentColor"
-							d="M3.55,18.54L4.96,19.95L6.76,18.16L5.34,16.74M11,22.45C11.32,22.45 13,22.45 13,22.45V19.5H11M12,5.5A6,6 0 0,0 6,11.5A6,6 0 0,0 12,17.5A6,6 0 0,0 18,11.5C18,8.18 15.31,5.5 12,5.5M20,12.5H23V10.5H20M17.24,18.16L19.04,19.95L20.45,18.54L18.66,16.74M20.45,4.46L19.04,3.05L17.24,4.84L18.66,6.26M13,0.55H11V3.5H13M4,10.5H1V12.5H4M6.76,4.84L4.96,3.05L3.55,4.46L5.34,6.26L6.76,4.84Z"
-						/>
-					</svg>
-
-					<svg
-						class="moon"
-						style="width: 24px; height: 24px"
-						viewBox="0 0 24 24"
-					>
-						<path
-							fill="currentColor"
-							d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"
-						/>
-					</svg>
-				</span>
-			</ul>
-			<div class="hamburger">
-				<div class="bar"></div>
-				<div class="bar"></div>
-				<div class="bar"></div>
-			</div>
-		</nav>
-		<!-- Nav bar End maccha ------------------------------------------------------------------------>
-		<div class="rules">
-			<div class="rule-heading">
-				<h2 class="rule-title">Rules</h2>
-				<div class="rule-line"></div>
-			</div>
-			<div class="rule-content">
-				<ul>
-					<li>
-						HACKOTHSAV is open to all B.E. / B.Tech. / BCA / MCA
-						students.
-					</li>
-					<li>It is a software-based hackathon.</li>
-					<li>
-						Teams must have a minimum of 2 members or a maximum of 5
-						Members.
-					</li>
-					<li>
-						The two broad areas for this event are “Societal Impact”
-						and “Business Oriented”. Teams must choose a broad area
-						during registration itself.
-					</li>
-					<li>
-						Under each broad area, there will be one or more problem
-						statements for Which teams have to come up with a
-						solution and build a software-based Project within 48
-						hours.
-					</li>
-					<li>
-						Problem statements under each broad area will be
-						disclosed on the day of the hackathon.
-					</li>
-					<li>
-						Every Team will be assigned to a mentor and are needed
-						to submit their to their mentor in each phase.
-					</li>
-					<li>
-						Teams may change their Broad Area after the announcement
-						of the Problem Statements in each Broad Area.
-					</li>
-					<li>
-						If any team needs to change their Broad Area, they need
-						to send a mail to hackothsav@sode-edu.in within 1 Hour
-						of the announcement of Problem Statements.
-					</li>
-					<li>
-						Teams should build apps from scratch (Mobile App /
-						Website / DesktopApp). Teams can solve as many “Problem
-						Statements” as desired (zero, one, Or multiple).
-					</li>
-					<li>
-						Teams must do a minimum of 3 commits on GITHUB with a
-						gap of 4 hours one day (24 hours).
-					</li>
-					<li>
-						Phased evaluation will be at 4 stages. Timings will be 6
-						PM on 9th July, 10 AM on 10th July, 6 PM on 10th July
-						and 10 AM on 11th July.
-					</li>
-					<li>
-						To be considered for the Final Evaluation–teams must
-						submit their projects Sunday, July 11 at 10:00 AM IST.
-						Any late project submissions will not be Accepted.
-					</li>
-					<li>The jury’s decision is final.</li>
-				</ul>
-			</div>
-		</div>
-		<!--Footer page start-------------------------------------------------------------------------------------- -->
-		<div class="footer-div footer-box">
-			<div class="footer">
-				<div
-					class="main-footer"
-					data-aos="fade-down"
-					data-aos-offset="-300"
-					data-aos-delay="200"
-					data-aos-duration="800"
-					data-aos-easing="ease-in-out"
-					data-aos-mirror="true"
-					data-aos-once="false"
-					data-aos-anchor-placement="top-center"
-				>
-					<div class="quick">
-						<div
-							class="text-body is-bold"
-							data-aos="fade-up"
-							data-aos-offset="-300"
-							data-aos-delay="400"
-							data-aos-duration="800"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-						>
-							Quick Links
-						</div>
-						<ul class="footer-links unstyle">
-							<li
-								class="footer-list-link"
-								data-aos="fade-right"
-								data-aos-offset="-300"
-								data-aos-delay="600"
-								data-aos-duration="800"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								<a href="#" class="text-body-3 is-link">Home</a>
-							</li>
-							<li
-								class="footer-list-link"
-								data-aos="fade-right"
-								data-aos-offset="-300"
-								data-aos-delay="800"
-								data-aos-duration="800"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								<a href="#about" class="text-body-3 is-link"
-									>About</a
-								>
-							</li>
-							<li
-								class="footer-list-link"
-								data-aos="fade-right"
-								data-aos-offset="-300"
-								data-aos-delay="1000"
-								data-aos-duration="800"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								<a href="#count" class="text-body-3 is-link"
-									>Countdown</a
-								>
-							</li>
-							<li
-								class="footer-list-link"
-								data-aos="fade-right"
-								data-aos-offset="-300"
-								data-aos-delay="1200"
-								data-aos-duration="800"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								<a href="#prizes" class="text-body-3 is-link"
-									>Prizes</a
-								>
-							</li>
-							<li
-								class="footer-list-link"
-								data-aos="fade-right"
-								data-aos-offset="-300"
-								data-aos-delay="1400"
-								data-aos-duration="800"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								<a href="#sponsors" class="text-body-3 is-link"
-									>Sponsors</a
-								>
-							</li>
-						</ul>
+				</div>
+				<div class="contact">
+					<div class="text-body is-bold" data-aos="fade-up" data-aos-offset="-300" data-aos-delay="400"
+						data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center">
+						Contact
 					</div>
-					<div class="contact">
-						<div
-							class="text-body is-bold"
-							data-aos="fade-up"
-							data-aos-offset="-300"
-							data-aos-delay="400"
-							data-aos-duration="800"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-						>
-							Contact
-						</div>
-						<ul class="footer-links unstyle">
-							<li class="footer-list-link">
-								<a
-									href="https://sode-edu.in/"
-									class="text-body-3 is-link"
-									data-aos="fade-up"
-									data-aos-offset="-300"
-									data-aos-delay="600"
-									data-aos-duration="800"
-									data-aos-easing="ease-in-out"
-									data-aos-mirror="true"
-									data-aos-once="false"
-									data-aos-anchor-placement="top-center"
-									>SMVITM</a
-								>
-							</li>
-							<li class="footer-list-link">
-								<p
-									class="text-body-3 is-link"
-									data-aos="fade-up"
-									data-aos-offset="-300"
-									data-aos-delay="800"
-									data-aos-duration="800"
-									data-aos-easing="ease-in-out"
-									data-aos-mirror="true"
-									data-aos-once="false"
-									data-aos-anchor-placement="top-center"
-								>
-									Raunak: +91 9113671387
-								</p>
-							</li>
-							<li class="footer-list-link">
-								<p
-									class="text-body-3 is-link"
-									data-aos="fade-up"
-									data-aos-offset="-300"
-									data-aos-delay="1000"
-									data-aos-duration="800"
-									data-aos-easing="ease-in-out"
-									data-aos-mirror="true"
-									data-aos-once="false"
-									data-aos-anchor-placement="top-center"
-								>
-									Ashuthosh: +91 9661442323
-								</p>
-							</li>
-							<li class="footer-list-link">
-								<a
-									href=""
-									class="text-body-3 is-link"
-									data-aos="fade-up"
-									data-aos-offset="-300"
-									data-aos-delay="1200"
-									data-aos-duration="800"
-									data-aos-easing="ease-in-out"
-									data-aos-mirror="true"
-									data-aos-once="false"
-									data-aos-anchor-placement="top-center"
-									>hackothsav@sode-edu.in</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="about-us">
-						<div
-							class="text-body is-bold"
-							data-aos="fade-up"
-							data-aos-offset="-300"
-							data-aos-delay="400"
-							data-aos-duration="800"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-						>
-							HACKOTHSAV FOUNDATION
-						</div>
-						<div class="about-box">
-							<p
-								class="text-body-3 is-link"
-								data-aos="fade-right"
-								data-aos-offset="-300"
-								data-aos-delay="800"
-								data-aos-duration="800"
-								data-aos-easing="ease-in-out"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								The Goal of Hackothsav is to support coders and
-								the hackathon communities around the globe.
+					<ul class="footer-links unstyle">
+						<li class="footer-list-link">
+							<a href="https://sode-edu.in/" class="text-body-3 is-link" data-aos="fade-up" data-aos-offset="-300"
+								data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true"
+								data-aos-once="false" data-aos-anchor-placement="top-center">SMVITM</a>
+						</li>
+						<li class="footer-list-link">
+							<p class="text-body-3 is-link" data-aos="fade-up" data-aos-offset="-300" data-aos-delay="800"
+								data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+								data-aos-anchor-placement="top-center">
+								Raunak: +91 9113671387
 							</p>
-						</div>
-					</div>
+						</li>
+						<li class="footer-list-link">
+							<p class="text-body-3 is-link" data-aos="fade-up" data-aos-offset="-300" data-aos-delay="1000"
+								data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+								data-aos-anchor-placement="top-center">
+								Ashuthosh: +91 9661442323
+							</p>
+						</li>
+						<li class="footer-list-link">
+							<a href="" class="text-body-3 is-link" data-aos="fade-up" data-aos-offset="-300" data-aos-delay="1200"
+								data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+								data-aos-anchor-placement="top-center">hackothsav@sode-edu.in</a>
+						</li>
+					</ul>
 				</div>
-				<div class="sub-footer">
-					<div class="brand-box">
-						<div
-							class="logo-details"
-							data-aos="fade-right"
-							data-aos-offset="-300"
-							data-aos-delay="1000"
-							data-aos-duration="1000"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-						>
-							<img src="assets/images/image2vector.svg" alt="" />
-						</div>
-						<div class="brand-name">
-							<div
-								class="text-body is-bold"
-								data-aos="fade-left"
-								data-aos-offset="-300"
-								data-aos-delay="800"
-								data-aos-duration="800"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								Hackothsav
-							</div>
-							<div
-								class="rights"
-								data-aos="fade-right"
-								data-aos-offset="-300"
-								data-aos-delay="800"
-								data-aos-duration="1600"
-								data-aos-easing="ease-in-out"
-								data-aos-mirror="true"
-								data-aos-once="false"
-								data-aos-anchor-placement="top-center"
-							>
-								&copy; 2021 All rights reserved | Made by
-								Hackothsav Team
-							</div>
-						</div>
+				<div class="about-us">
+					<div class="text-body is-bold" data-aos="fade-up" data-aos-offset="-300" data-aos-delay="400"
+						data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center">
+						HACKOTHSAV FOUNDATION
 					</div>
-					<div class="social-box">
-						<a
-							href="#"
-							data-aos="fade-left"
-							data-aos-offset="-300"
-							data-aos-delay="200"
-							data-aos-duration="800"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-							><i class="fab fa-facebook-f"></i
-						></a>
-						<a
-							href="#"
-							data-aos="fade-left"
-							data-aos-offset="-300"
-							data-aos-delay="600"
-							data-aos-duration="800"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-							><i class="fab fa-instagram"></i
-						></a>
-						<a
-							href="#"
-							data-aos="fade-left"
-							data-aos-offset="-300"
-							data-aos-delay="800"
-							data-aos-duration="800"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-							><i class="fab fa-linkedin-in"></i
-						></a>
-						<a
-							href="#"
-							data-aos="fade-left"
-							data-aos-offset="-300"
-							data-aos-delay="1000"
-							data-aos-duration="800"
-							data-aos-easing="ease-in-out"
-							data-aos-mirror="true"
-							data-aos-once="false"
-							data-aos-anchor-placement="top-center"
-							><i class="fab fa-youtube"></i
-						></a>
+					<div class="about-box">
+						<p class="text-body-3 is-link" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="800"
+							data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							The Goal of Hackothsav is to support coders and
+							the hackathon communities around the globe.
+						</p>
 					</div>
 				</div>
 			</div>
+			<div class="sub-footer">
+				<div class="brand-box">
+					<div class="logo-details" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="1000"
+						data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center">
+						<img src="assets/images/image2vector.svg" alt="" />
+					</div>
+					<div class="brand-name">
+						<div class="text-body is-bold" data-aos="fade-left" data-aos-offset="-300" data-aos-delay="800"
+							data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							Hackothsav
+						</div>
+						<div class="rights" data-aos="fade-right" data-aos-offset="-300" data-aos-delay="800"
+							data-aos-duration="1600" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+							data-aos-anchor-placement="top-center">
+							&copy; 2021 All rights reserved | Made by
+							Hackothsav Team
+						</div>
+					</div>
+				</div>
+				<div class="social-box">
+					<a href="#" data-aos="fade-left" data-aos-offset="-300" data-aos-delay="200" data-aos-duration="800"
+						data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" data-aos="fade-left" data-aos-offset="-300" data-aos-delay="600" data-aos-duration="800"
+						data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center"><i class="fab fa-instagram"></i></a>
+					<a href="#" data-aos="fade-left" data-aos-offset="-300" data-aos-delay="800" data-aos-duration="800"
+						data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#" data-aos="fade-left" data-aos-offset="-300" data-aos-delay="1000" data-aos-duration="800"
+						data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
+						data-aos-anchor-placement="top-center"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
 		</div>
+	</div>
 
-		<div id="sponsorsModal" class="modal">
-			<!-- Modal content -->
-			<div class="modal-content">
-				<div class="modal-header">
-					<span class="close">&times;</span>
-					<h2>Brief Detail About Our Sponsor</h2>
-				</div>
-				<div class="modal-body" id="sponsorsModalBody">
-					<center style="background-color: transparent">
-						<i class="fa fa-spinner fa-spin"></i>
-					</center>
-				</div>
-				<div class="modal-footer">
-					<a href="" target="_blank" id="sponsorsLink">
-						<button>View More</button>
-					</a>
-				</div>
+	<div id="sponsorsModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Brief Detail About Our Sponsor</h2>
+			</div>
+			<div class="modal-body" id="sponsorsModalBody">
+				<center style="background-color: transparent">
+					<i class="fa fa-spinner fa-spin"></i>
+				</center>
+			</div>
+			<div class="modal-footer">
+				<a href="" target="_blank" id="sponsorsLink">
+					<button>View More</button>
+				</a>
 			</div>
 		</div>
-		<!--Footer page End-------------------------------------------------------------------------------------- -->
-	</body>
+	</div>
+	<!--Footer page End-------------------------------------------------------------------------------------- -->
+</body>
+
 </html>
