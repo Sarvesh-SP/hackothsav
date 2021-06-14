@@ -1265,6 +1265,9 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 0.5rem;
 	background-color: var(--color-main-light);
 }
+.faq-text {
+	background-color: var(--color-main-light);
+}
 
 .faq-text .faq-text-title {
 	background-color: var(--color-main-light);
@@ -1329,6 +1332,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 700px) {
+	.faq-text-title {
+		width: 85%;
+		font-size: 4vw;
+	}
+
 	.faq-section .faq-items-grid {
 		display: grid;
 		grid-template-columns: none;
