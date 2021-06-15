@@ -353,7 +353,16 @@ ul.dropdown-link li {
 .nav-links .download::after {
 	content: none;
 }
+/* vin */
+.nav-bar .logo h1 {
+	margin: 0;
+}
 
+.nav-bar .logo a {
+	display: flex;
+	align-items: center;
+}
+/* vin-end */
 @media screen and (max-width: 1000px) {
 	.nav-bar {
 		margin: 0 1rem;
@@ -399,10 +408,10 @@ ul.dropdown-link li {
 		align-items: center;
 	}
 
-	.hacko {
+/* 	.hacko {
 
 		margin-top: 1rem;
-	}
+	} */
 	.nav-links,
 	.nav-links.active {
 		height: 100%;
