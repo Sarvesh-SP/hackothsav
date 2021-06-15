@@ -286,15 +286,19 @@ ul.dropdown-link li {
 }
 
 .nav-links > li > .dropdown-link {
-	display: none;
+	display: block;
 	position: absolute;
-	transition: 10s;
+	transition: 0.3s all ease-in-out;
+	margin-top: 50px;
+	left: 1300px;
 }
 
 .nav-links > li:hover .dropdown-link {
 	display: block;
 	background: rgba(0, 0, 0, 0.4);
 	padding: 0;
+	top: -2vw;
+	left: 0px;
 }
 
 .nav-links > li > .dropdown-link li {
@@ -350,6 +354,10 @@ ul.dropdown-link li {
 	margin: 5px auto;
 	transition: all 0.3s ease-in-out;
 	background-color: white;
+}
+
+.nav-links .download::after {
+	content: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -452,6 +460,14 @@ ul.dropdown-link li {
 
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	.nav-links.active .download {
+		position: fixed;
+	}
+	.nav-links.active .dropdown-link {
+		top: 1rem;
+		right: 0rem;
 	}
 }
 
@@ -1314,6 +1330,7 @@ ul.dropdown-link li {
 
 .faq-section .faq-items-grid .faq-item .faq-text .faq-text-title {
 	font-size: 1.2rem;
+	width: 90%;
 }
 
 .faq-section .faq-items-grid .faq-item .faq-answer {
