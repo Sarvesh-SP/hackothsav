@@ -1318,6 +1318,7 @@ body::-webkit-scrollbar-thumb {
 
 .faq-section .faq-items-grid .faq-item .faq-text .faq-text-title {
 	font-size: 1.2rem;
+	width: 90%;
 }
 
 .faq-section .faq-items-grid .faq-item .faq-answer {
