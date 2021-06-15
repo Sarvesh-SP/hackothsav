@@ -361,6 +361,23 @@ body::-webkit-scrollbar-thumb {
 	.nav-bar .logo {
 		margin-left: 2rem;
 	}
+/* vin	 */
+	.nav-links > li > .dropdown-link {
+		display: block;
+		position: absolute;
+		transition: 0.3s all ease-in;
+		margin-top: 50px;
+		left: 00px;
+	}
+
+	.nav-links > li:hover .dropdown-link {
+		display: block;
+		background: rgba(0, 0, 0, 0.4);
+		padding: 0;
+		top: -2vw;
+		left: -0px;
+	}
+/* 	vin end */
 }
 /* ----------------------------------------------------------------------------------------------------------- */
 /*************************************  Burgers Start ********************************************/
@@ -480,6 +497,38 @@ body::-webkit-scrollbar-thumb {
 		font-size: large;
 	}
 }
+
+/*  vin */
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+	.nav-links.active .download {
+		position: relative;
+		left: 0px;
+	}
+	.li-download {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav-links.active .dropdown-link {
+		top: 0rem;
+	}
+	.nav-links > li > .dropdown-link {
+		display: none;
+		position: relative;
+		transition: 0.1s all ease-in;
+		margin-top: 200vh;
+		left: 0px;
+		padding: 0;
+	}
+
+	.nav-links > li:hover .dropdown-link {
+		display: block;
+		margin-top: 50px;
+		left: -0px;
+		padding: 0;
+	}
+}
+/*  vin*/
 
 /*************************************  Burgers End********************************************/
 /* ----------------------------------------------------------------------------------------------------------- */
