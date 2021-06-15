@@ -302,6 +302,13 @@ body::-webkit-scrollbar-thumb {
 	border-bottom: 2px solid #28f586;
 }
 
+ul.dropdown-link {
+	margin-top: 1.8rem;
+}
+
+ul.dropdown-link li {
+	text-align: center;
+}
 .nav-links > li > a {
 	background-color: transparent;
 
