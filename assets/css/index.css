@@ -278,19 +278,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-links > li > .dropdown-link {
-	display: block;
+	display: none;
 	position: absolute;
 	transition: 0.3s all ease-in-out;
-	margin-top: 50px;
-	left: 1300px;
 }
 
 .nav-links > li:hover .dropdown-link {
 	display: block;
 	background: rgba(0, 0, 0, 0.4);
 	padding: 0;
-	top: -2vw;
-	left: 0px;
 }
 
 .nav-links > li > .dropdown-link li {
@@ -460,6 +456,22 @@ body::-webkit-scrollbar-thumb {
 	.nav-links.active .dropdown-link {
 		top: 1rem;
 		right: 0rem;
+	}
+
+	.nav-links > li > .dropdown-link {
+		display: block;
+		position: absolute;
+		transition: 0.3s all ease-in;
+		margin-top: 50px;
+		left: 1300px;
+	}
+
+	.nav-links > li:hover .dropdown-link {
+		display: block;
+		background: rgba(0, 0, 0, 0.4);
+		padding: 0;
+		top: -2vw;
+		left: -0px;
 	}
 }
 
