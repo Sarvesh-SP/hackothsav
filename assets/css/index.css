@@ -277,6 +277,14 @@ body::-webkit-scrollbar-thumb {
 	/* padding: 1rem; */
 }
 
+ul.dropdown-link {
+	margin-top: 1.8rem;
+}
+
+ul.dropdown-link li {
+	text-align: center;
+}
+
 .nav-links > li > .dropdown-link {
 	display: none;
 	position: absolute;
