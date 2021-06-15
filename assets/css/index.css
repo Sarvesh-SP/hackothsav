@@ -281,16 +281,15 @@ body::-webkit-scrollbar-thumb {
 	display: block;
 	position: absolute;
 	transition: 0.3s all ease-in-out;
-	margin-top: 50px;
-	left: 1300px;
+	right: -2300px;
+	height: 0;
 }
 
 .nav-links > li:hover .dropdown-link {
 	display: block;
 	background: rgba(0, 0, 0, 0.4);
 	padding: 0;
-	top: -2vw;
-	left: 0px;
+	right: 0;
 }
 
 .nav-links > li > .dropdown-link li {
@@ -398,6 +397,13 @@ body::-webkit-scrollbar-thumb {
 		padding: 0;
 	}
 
+	.nav-links > li .dropdown-link {
+		display: block;
+		position: relative;
+		right: -4000px;
+		height: 0;
+	}
+
 	.nav-links > li:hover .dropdown-link {
 		display: block;
 		position: relative;
@@ -459,7 +465,7 @@ body::-webkit-scrollbar-thumb {
 	}
 	.nav-links.active .dropdown-link {
 		top: 1rem;
-		right: 0rem;
+		right: -700px;
 	}
 }
 
