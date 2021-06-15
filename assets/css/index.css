@@ -278,15 +278,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-links > li > .dropdown-link {
-	display: none;
+	display: block;
 	position: absolute;
-	transition: 10s;
+	transition: 0.3s all ease-in-out;
+	margin-top: 50px;
+	left: 1300px;
 }
 
 .nav-links > li:hover .dropdown-link {
 	display: block;
 	background: rgba(0, 0, 0, 0.4);
 	padding: 0;
+	top: -2vw;
+	left: 0px;
 }
 
 .nav-links > li > .dropdown-link li {
