@@ -30,6 +30,7 @@
 	--twitter: #1da1f2;
 	--yt: #ff0000;
 	--linked-in: #0077b5;
+	--info: white;
 	--gradient-blue: linear-gradient(
 		94.99deg,
 		#00ffa4 2.48%,
@@ -77,6 +78,11 @@
 	--color-background-light: #eef1f6;
 	--font-color: #49274a;
 	--text-body: #6e12ca;
+	--facebook: #4267b2;
+	--twitter: #1da1f2;
+	--yt: #ff0000;
+	--linked-in: #0077b5;
+	--info: white;
 	--color-button-text: #fff;
 	--font-color-light: hsla(0, 0%, 100%, 0.25882);
 	--border-color: #dbdddf;
@@ -599,7 +605,7 @@ ul.dropdown-link li {
 	background-color: transparent;
 }
 .info p {
-	color: white;
+	color: var(--info);
 }
 
 .hero .info p {
