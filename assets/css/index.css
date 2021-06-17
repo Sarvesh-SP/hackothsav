@@ -598,6 +598,9 @@ ul.dropdown-link li {
 .hero .cursor {
 	background-color: transparent;
 }
+.info p {
+	color: white;
+}
 
 .hero .info p {
 	font-family: var(--roboto);
