@@ -650,15 +650,16 @@ ul.dropdown-link li {
 	content: "";
 	background: linear-gradient(
 		45deg,
-		#ff0000,
-		#ff7300,
-		#fffb00,
-		#48ff00,
-		#00ffd5,
-		#002bff,
-		#7a00ff,
-		#ff00c8,
-		#ff0000
+		#08F7FE,
+		#09FBD3,
+		#FE53BB,
+		#FF9472,
+		#FFACFC,
+		#F148FB,
+		#7122FA,
+		#560A86,
+		#B76CFD
+
 	);
 	position: absolute;
 	top: -7.5px;
