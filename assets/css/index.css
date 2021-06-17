@@ -309,16 +309,15 @@ ul.dropdown-link {
 ul.dropdown-link li {
 	text-align: center;
 }
-.nav-links > li > a {
+.nav-links > li > a, .nav-links > li > .download {
 	background-color: transparent;
-
 	padding: 0.2rem 1.2rem;
 	opacity: 0.7;
 	position: relative;
 	transition: all 0.5s ease-in-out;
 }
 
-.nav-links > li > a::after {
+.nav-links > li > a::after, .nav-links > li > .download::after {
 	content: "";
 	position: absolute;
 	bottom: -10px;
@@ -354,7 +353,16 @@ ul.dropdown-link li {
 .nav-links .download::after {
 	content: none;
 }
+/* vin */
+.nav-bar .logo h1 {
+	margin: 0;
+}
 
+.nav-bar .logo a {
+	display: flex;
+	align-items: center;
+}
+/* vin-end */
 @media screen and (max-width: 1000px) {
 	.nav-bar {
 		margin: 0 1rem;
@@ -400,10 +408,10 @@ ul.dropdown-link li {
 		align-items: center;
 	}
 
-	.hacko {
+/* 	.hacko {
 
 		margin-top: 1rem;
-	}
+	} */
 	.nav-links,
 	.nav-links.active {
 		height: 100%;
