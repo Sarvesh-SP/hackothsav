@@ -1706,6 +1706,27 @@ h2.rule-title::before {
 		font-size: 10px;
 	}
 }
+
+.brochure-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.brochure-link .brochure-button {
+	padding: 1rem;
+	background-color: var(--color-main);
+	border: 1px solid var(--color-accent);
+	border-radius: 0.5rem;
+}
+
+.brochure-link .brochure-button:hover {
+	cursor: pointer;
+	background: #800758;
+	border: 1px solid var(--colour-pink);
+}
+
+
 /******************************************************** Rules end ******************************************************/
 
 .modal {
