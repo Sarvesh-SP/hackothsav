@@ -8,6 +8,7 @@
 	/* --color-main: #161616; */
 	--color-main: #0c0d21;
 	--ham:#0c0d21;
+	--bar:#fff;
 	--color-main-light: #151629;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
@@ -68,6 +69,7 @@
 	/* --color-main: #161616; */
 	--color-main: #E1E5EA;
 	--ham:#0c0d21;
+	--bar:#49274a;
 	--color-main-light: #f8f5f1;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
@@ -355,7 +357,7 @@ ul.dropdown-link li {
 	height: 3px;
 	margin: 5px auto;
 	transition: all 0.3s ease-in-out;
-	background-color: white;
+	background-color: var(--bar);
 }
 
 .nav-links .download::after {
@@ -482,6 +484,9 @@ ul.dropdown-link li {
 		margin: 0 1rem 0 0;
 	}
 
+	.hamburger.active {
+		background-color: var(--ham);
+	}
 	.hamburger.active .bar:nth-child(2) {
 		opacity: 0;
 	}
