@@ -7,6 +7,7 @@
 	--roboto: "Roboto Mono", monospace;
 	/* --color-main: #161616; */
 	--color-main: #0c0d21;
+	--ham:#0c0d21;
 	--color-main-light: #151629;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
@@ -65,7 +66,8 @@
 	--title-font: "Sen", sans-serif;
 	--roboto: "Roboto Mono", monospace;
 	/* --color-main: #161616; */
-	--color-main: #E1E5EA`;
+	--color-main: #E1E5EA;
+	--ham:#0c0d21;
 	--color-main-light: #f8f5f1;
 	--color-main-transparent: rgba(12, 23, 36, 0.27451);
 	--color-primary: #2882f5;
@@ -431,7 +433,7 @@ ul.dropdown-link li {
 		text-align: center;
 		transition: 0.3s;
 		overflow: hidden;
-		background-color: var(--color-main);
+		background-color: var(--ham);
 		margin: 0;
 		padding: 0;
 	}
